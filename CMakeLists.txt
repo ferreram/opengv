@@ -4,6 +4,8 @@ project(opengv CXX)
 set (OPENGV_VERSION_MAJOR 1)
 set (OPENGV_VERSION_MINOR 0)
 
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
+
 # Set the build type.  Options are:
 #
 #  None (CMAKE_C_FLAGS or CMAKE_CXX_FLAGS used)
@@ -20,7 +22,7 @@ set(EXECUTABLE_OUTPUT_PATH ${CMAKE_BINARY_DIR}/bin)
 set(LIBRARY_OUTPUT_PATH ${CMAKE_BINARY_DIR}/lib)
 
 OPTION(BUILD_TESTS "Build tests" ON)
-OPTION(BUILD_PYTHON "Build Python extension" OFF)
+OPTION(BUILD_PYTHON "Build Python extension" ON)
 
 IF(MSVC)
   set(BUILD_SHARED_LIBS OFF)

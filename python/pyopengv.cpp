@@ -125,6 +125,15 @@ bp::list listFromTransformations( const opengv::transformations_t &t )
   return retn;
 }
 
+bp::list listFromInliers( const std::vector<int> &in )
+{
+	bp::list retn;
+	for (size_t i = 0 ; i < in.size() ; ++i ) {
+		retn.append(in[i]);
+	}
+	return retn;
+}
+
 std::vector<int> getNindices( int n )
 {
   std::vector<int> indices;
@@ -313,7 +322,8 @@ bp::object ransac(
 
   // Solve
   ransac.computeModel();
-  return arrayFromTransformation(ransac.model_coefficients_);
+  return bp::make_tuple(arrayFromTransformation(ransac.model_coefficients_), 
+						listFromInliers(ransac.inliers_));
 }
 
 
@@ -519,7 +529,8 @@ bp::object ransac(
 
   // Solve
   ransac.computeModel();
-  return arrayFromTransformation(ransac.model_coefficients_);
+  return bp::make_tuple(arrayFromTransformation(ransac.model_coefficients_), 
+						listFromInliers(ransac.inliers_));
 }
 
 bp::object ransac_rotationOnly(

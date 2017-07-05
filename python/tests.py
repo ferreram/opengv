@@ -1,6 +1,11 @@
 import pyopengv
 import numpy as np
 
+from matplotlib import pyplot
+
+import cv2
+
+
 def normalized(x):
     return x / np.linalg.norm(x)
 
@@ -188,9 +193,60 @@ def test_relative_pose_ransac():
     ransac_transformation = pyopengv.relative_pose_ransac(
         d.bearing_vectors1, d.bearing_vectors2, "NISTER", 0.01, 1000)
 
-    assert same_transformation(d.position, d.rotation, ransac_transformation)
+    print(d.position.shape)
+    print(d.rotation.shape)
 
+    assert same_transformation(d.position, d.rotation, ransac_transformation[0])
+
+    print("Test Relative Pose RANSAC \n")
+
+    print("Truth : \n %s \n" % np.hstack((d.rotation.reshape(3,3), normalized(d.position).reshape(3,1))))
+    print("Result : \n %s \n" % ransac_transformation[0])
+
+    for i in xrange(len(d.bearing_vectors1)):
+        d.bearing_vectors1[i,0] /= d.bearing_vectors1[i,2]
+        d.bearing_vectors1[i,1] /= d.bearing_vectors1[i,2]
+        d.bearing_vectors1[i,2] /= d.bearing_vectors1[i,2]
+        d.bearing_vectors2[i,0] /= d.bearing_vectors2[i,2]
+        d.bearing_vectors2[i,1] /= d.bearing_vectors2[i,2]
+        d.bearing_vectors2[i,2] /= d.bearing_vectors2[i,2]
+
+    d.bearing_vectors1 = d.bearing_vectors1.reshape(-1,1,2)
+    d.bearing_vectors2 = d.bearing_vectors2.reshape(-1,1,2)
+
+    E, status = cv2.findEssentialMat(d.bearing_vectors1, d.bearing_vectors2, np.identity(3), cv2.RANSAC, 0.99, 1.)
+
+    res, R,t, status = cv2.recoverPose(E, d.bearing_vectors1, d.bearing_vectors2, np.identity(3), None)
+
+    print(np.hstack((R,t)))
+
+    ransac_transformation = pyopengv.relative_pose_ransac(
+        d.bearing_vectors1, d.bearing_vectors2, "STEWENIUS", 0.01, 1000)
+
+    print("Result : \n %s \n" % ransac_transformation[0])
+
+    ransac_transformation = pyopengv.relative_pose_ransac(
+        d.bearing_vectors1, d.bearing_vectors2, "EIGHTPT", 0.01, 1000)
+
+    print("Result : \n %s \n" % ransac_transformation[0])
     print "Done testing relative pose ransac"
+
+
+def test_absolute_pose_ransac():
+    print "Testing absolute pose ransac"
+
+    d = RelativePoseDataset(100, 0, 0.5)
+
+    print(d.bearing_vectors1.shape)
+    print(d.points.shape)
+
+    ransac_transformation = pyopengv.absolute_pose_ransac(d.points, d.bearing_vectors1, "KNEIP", 0.001, 2000)
+
+    print("Test Absolute Pose RANSAC \n")
+
+    print("Result : \n %s \n" % ransac_transformation[0])
+
+    print "Done testing absolute pose ransac"
 
 
 def test_relative_pose_ransac_rotation_only():
@@ -221,11 +277,78 @@ def test_triangulation():
 
     assert np.allclose(d.points, points2)
 
+    print("TestTriangulation \n")
+
+    print(d.bearing_vectors1.shape)
+
+    print("Truth : \n %s \n" % d.points)
+    print("Result 1: \n %s \n" % points1)
+    print("Result 2: \n %s \n" % points2)
+
     print "Done testing triangulation"
+
+
+def test_relative_pose_triangulated():
+
+    d = RelativePoseDataset(50, 0.0, 0)
+
+    result = pyopengv.relative_pose_ransac(d.bearing_vectors1, d.bearing_vectors2, "NISTER", 0.001, 1000)
+
+    E = result[0]
+
+    print("%s inliers / %s points" % (len(result[1]), len(d.points)))
+
+    R = E[:,:3]
+    t = normalized(E[:,3])
+
+    points2 = pyopengv.triangulation_triangulate2(
+        d.bearing_vectors1, d.bearing_vectors2, t, R)
+
+    points = pyopengv.triangulation_triangulate2(d.bearing_vectors1, d.bearing_vectors2, d.position, d.rotation)
+
+    # for i in xrange(len(d.points)):
+    #     d.bearing_vectors2[i] = R.T.dot(d.points[i] - t)
+
+    result_ = pyopengv.absolute_pose_ransac(d.bearing_vectors2, d.points, "KNEIP", 0.001, 1000)
+
+    print("\n----------------------\n")
+    print("TEST \n")
+    print("Truth : \n")
+    print(np.hstack((d.rotation,d.position.reshape(3,1))))
+    print("Essential M. : \n")
+    print(E)
+    print()
+    print(np.hstack((R,t.reshape(3,1))))
+    print()
+    print(np.hstack((R,t.reshape(3,1))) / E)
+
+    print("\n Truth : \n")
+    print(d.points[:5])
+    print()
+    print(d.bearing_vectors1[:5])
+    print()
+    print((d.bearing_vectors1 / d.points)[:5])
+    print("Triangulation : \n")
+    print(points2[:5])
+    print()
+    print(points[:5])
+    print()
+    print("Scaling value :")
+    print()
+    print((d.points / points2)[:5])
+    print()
+    print((points / points2)[:5])
+
+    print("\nAbsolute Pose : \n")
+    print(normalized(result_[0][:,3]))
+    print()
+    print(t)
 
 
 if __name__ == "__main__":
     test_relative_pose()
     test_relative_pose_ransac()
+    test_absolute_pose_ransac()
     test_relative_pose_ransac_rotation_only()
     test_triangulation()
+    test_relative_pose_triangulated()
