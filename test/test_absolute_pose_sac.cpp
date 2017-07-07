@@ -56,9 +56,9 @@ int main( int argc, char** argv )
   initializeRandomSeed();
   
   //set experiment parameters
-  double noise = 0.0;
-  double outlierFraction = 0.1;
-  size_t numberPoints = 100;
+  double noise = 5.0;
+  double outlierFraction = 0.3;
+  size_t numberPoints = 400;
 
   //create a random viewpoint pose
   translation_t position = generateRandomTranslation(2.0);
@@ -87,16 +87,18 @@ int main( int argc, char** argv )
       bearingVectors,
       points,
       rotation);
+  
+  transformation_t optimized_pose;
 
   //Create an AbsolutePoseSac problem and Ransac
   //The method can be set to KNEIP, GAO or EPNP
   sac::Ransac<sac_problems::absolute_pose::AbsolutePoseSacProblem> ransac;
   std::shared_ptr<
-      sac_problems::absolute_pose::AbsolutePoseSacProblem> absposeproblem_ptr(
+      sac_problems::absolute_pose::AbsolutePoseSacProblem> abspose_kneip_ptr(
       new sac_problems::absolute_pose::AbsolutePoseSacProblem(
       adapter,
       sac_problems::absolute_pose::AbsolutePoseSacProblem::KNEIP));
-  ransac.sac_model_ = absposeproblem_ptr;
+	  ransac.sac_model_ = abspose_kneip_ptr;
   ransac.threshold_ = 1.0 - cos(atan(sqrt(2.0)*0.5/800.0));
   ransac.max_iterations_ = 50;
 
@@ -109,14 +111,92 @@ int main( int argc, char** argv )
   double ransac_time = TIMETODOUBLE(timeval_minus(toc,tic));
 
   //print the results
+  std::cout << "KNEIP: " << std::endl;
   std::cout << "the ransac results is: " << std::endl;
   std::cout << ransac.model_coefficients_ << std::endl << std::endl;
   std::cout << "Ransac needed " << ransac.iterations_ << " iterations and ";
   std::cout << ransac_time << " seconds" << std::endl << std::endl;
-  std::cout << "the number of inliers is: " << ransac.inliers_.size();
+  std::cout << "the number of inliers is: " << ransac.inliers_.size() << " out of " << numberPoints;
   std::cout << std::endl << std::endl;
-  std::cout << "the found inliers are: " << std::endl;
-  for(size_t i = 0; i < ransac.inliers_.size(); i++)
-    std::cout << ransac.inliers_[i] << " ";
+  
+  ransac.sac_model_->optimizeModelCoefficients(ransac.inliers_, ransac.model_coefficients_, optimized_pose);
+  
+  std::cout << "the optimized ransac results is: " << std::endl;
+  std::cout <<  optimized_pose << std::endl << std::endl;
+  
+  //Create an AbsolutePoseSac problem and Ransac
+  //The method can be set to KNEIP, GAO or EPNP
+  std::shared_ptr<
+  sac_problems::absolute_pose::AbsolutePoseSacProblem> abspose_gao_ptr(
+	  new sac_problems::absolute_pose::AbsolutePoseSacProblem(
+		  adapter,
+		  sac_problems::absolute_pose::AbsolutePoseSacProblem::GAO));
+  ransac.sac_model_ = abspose_gao_ptr;
+  ransac.threshold_ = 1.0 - cos(atan(sqrt(2.0)*0.5/800.0));
+  ransac.max_iterations_ = 50;
+  
+  //Run the experiment
+  gettimeofday( &tic, 0 );
+  ransac.computeModel();
+  gettimeofday( &toc, 0 );
+  ransac_time = TIMETODOUBLE(timeval_minus(toc,tic));
+  
+  //print the results
+  std::cout << "GAO: " << std::endl;
+  std::cout << "the ransac results is: " << std::endl;
+  std::cout << ransac.model_coefficients_ << std::endl << std::endl;
+  std::cout << "Ransac needed " << ransac.iterations_ << " iterations and ";
+  std::cout << ransac_time << " seconds" << std::endl << std::endl;
+  std::cout << "the number of inliers is: " << ransac.inliers_.size() << " out of " << numberPoints;
   std::cout << std::endl << std::endl;
+  
+  ransac.sac_model_->optimizeModelCoefficients(ransac.inliers_, ransac.model_coefficients_, optimized_pose);
+  
+  std::cout << "the optimized ransac results is: " << std::endl;
+  std::cout <<  optimized_pose << std::endl << std::endl;
+
+  //Create an AbsolutePoseSac problem and Ransac
+  //The method can be set to KNEIP, GAO or EPNP
+  std::shared_ptr<
+  sac_problems::absolute_pose::AbsolutePoseSacProblem> abspose_epnp_ptr(
+	  new sac_problems::absolute_pose::AbsolutePoseSacProblem(
+		  adapter,
+		  sac_problems::absolute_pose::AbsolutePoseSacProblem::EPNP));
+  ransac.sac_model_ = abspose_epnp_ptr;
+  ransac.threshold_ = 1.0 - cos(atan(sqrt(2.0)*0.5/800.0));
+  ransac.max_iterations_ = 50;
+  
+  gettimeofday( &tic, 0 );
+  ransac.computeModel();
+  gettimeofday( &toc, 0 );
+  ransac_time = TIMETODOUBLE(timeval_minus(toc,tic));
+  
+  //print the results
+  std::cout << "EPNP: " << std::endl;
+  std::cout << "the ransac results is: " << std::endl;
+  std::cout << ransac.model_coefficients_ << std::endl << std::endl;
+  std::cout << "Ransac needed " << ransac.iterations_ << " iterations and ";
+  std::cout << ransac_time << " seconds" << std::endl << std::endl;
+  std::cout << "the number of inliers is: " << ransac.inliers_.size() << " out of " << numberPoints;
+  std::cout << std::endl << std::endl;
+
+  ransac.sac_model_->optimizeModelCoefficients(ransac.inliers_, ransac.model_coefficients_, optimized_pose);
+  
+  std::cout << "the optimized ransac results is: " << std::endl;
+  std::cout <<  optimized_pose << std::endl << std::endl;
+  /*
+  std::vector<int> indices10 = getNindices(numberPoints);
+  adapter.sett(ransac.model_coefficients_);
+  adapter.setR(R_perturbed);
+  transformation_t nonlinear_transformation_10 =
+  absolute_pose::optimize_nonlinear(adapter,indices10);
+  
+  adapter.sett(ransac.sac_model_->optimizeModelCoefficients());
+  
+  adapter.setR(ransac.sac_model_->);
+  
+  transformation_t nonlinear_transformation_10 =
+  absolute_pose::optimize_nonlinear(adapter,indices10);
+  */
+  
 }

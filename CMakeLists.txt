@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.1.0)
+cmake_minimum_required(VERSION 2.1.0)
 project(opengv CXX)
 
 set (OPENGV_VERSION_MAJOR 1)
@@ -296,6 +296,13 @@ IF (BUILD_TESTS)
     WORKING_DIRECTORY ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}
     COMMAND test_Sturm)
 
+  add_Executable( test_odom test/test_odom.cpp )
+  target_link_libraries( test_odom opengv random_generators )
+  add_test(NAME test_odom
+    WORKING_DIRECTORY ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}
+    COMMAND test_odom)
+
+
   set_target_properties(
     test_absolute_pose
     test_absolute_pose_sac
@@ -315,6 +322,7 @@ IF (BUILD_TESTS)
     test_point_cloud
     test_point_cloud_sac
     test_Sturm
+    test_odom
 
     PROPERTIES
     CXX_STANDARD 11

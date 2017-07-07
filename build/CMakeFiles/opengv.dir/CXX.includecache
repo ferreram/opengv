@@ -594,27 +594,27 @@ Eigen/Eigen
 Eigen/src/Core/util/DisableStupidWarnings.h
 -
 
-/home/maxime/libraries/opengv/src/absolute_pose/CentralAbsoluteAdapter.cpp
+/home/mferrera/libs/opengv/src/absolute_pose/CentralAbsoluteAdapter.cpp
 opengv/absolute_pose/CentralAbsoluteAdapter.hpp
 -
 
-/home/maxime/libraries/opengv/src/absolute_pose/MACentralAbsolute.cpp
+/home/mferrera/libs/opengv/src/absolute_pose/MACentralAbsolute.cpp
 opengv/absolute_pose/MACentralAbsolute.hpp
 -
 
-/home/maxime/libraries/opengv/src/absolute_pose/MANoncentralAbsolute.cpp
+/home/mferrera/libs/opengv/src/absolute_pose/MANoncentralAbsolute.cpp
 opengv/absolute_pose/MANoncentralAbsolute.hpp
 -
 
-/home/maxime/libraries/opengv/src/absolute_pose/NoncentralAbsoluteAdapter.cpp
+/home/mferrera/libs/opengv/src/absolute_pose/NoncentralAbsoluteAdapter.cpp
 opengv/absolute_pose/NoncentralAbsoluteAdapter.hpp
 -
 
-/home/maxime/libraries/opengv/src/absolute_pose/NoncentralAbsoluteMultiAdapter.cpp
+/home/mferrera/libs/opengv/src/absolute_pose/NoncentralAbsoluteMultiAdapter.cpp
 opengv/absolute_pose/NoncentralAbsoluteMultiAdapter.hpp
 -
 
-/home/maxime/libraries/opengv/src/absolute_pose/methods.cpp
+/home/mferrera/libs/opengv/src/absolute_pose/methods.cpp
 opengv/absolute_pose/methods.hpp
 -
 opengv/Indices.hpp
@@ -638,109 +638,109 @@ opengv/math/roots.hpp
 iostream
 -
 
-/home/maxime/libraries/opengv/src/absolute_pose/modules/Epnp.cpp
+/home/mferrera/libs/opengv/src/absolute_pose/modules/Epnp.cpp
 iostream
 -
 opengv/absolute_pose/modules/Epnp.hpp
 -
 
-/home/maxime/libraries/opengv/src/absolute_pose/modules/gp3p/code.cpp
+/home/mferrera/libs/opengv/src/absolute_pose/modules/gp3p/code.cpp
 opengv/absolute_pose/modules/gp3p/modules.hpp
 -
 
-/home/maxime/libraries/opengv/src/absolute_pose/modules/gp3p/init.cpp
+/home/mferrera/libs/opengv/src/absolute_pose/modules/gp3p/init.cpp
 opengv/absolute_pose/modules/gp3p/modules.hpp
 -
 
-/home/maxime/libraries/opengv/src/absolute_pose/modules/gp3p/reductors.cpp
+/home/mferrera/libs/opengv/src/absolute_pose/modules/gp3p/reductors.cpp
 opengv/absolute_pose/modules/gp3p/modules.hpp
 -
 
-/home/maxime/libraries/opengv/src/absolute_pose/modules/gp3p/spolynomials.cpp
+/home/mferrera/libs/opengv/src/absolute_pose/modules/gp3p/spolynomials.cpp
 opengv/absolute_pose/modules/gp3p/modules.hpp
 -
 
-/home/maxime/libraries/opengv/src/absolute_pose/modules/gpnp1/code.cpp
+/home/mferrera/libs/opengv/src/absolute_pose/modules/gpnp1/code.cpp
 opengv/absolute_pose/modules/gpnp1/modules.hpp
 -
 
-/home/maxime/libraries/opengv/src/absolute_pose/modules/gpnp1/init.cpp
+/home/mferrera/libs/opengv/src/absolute_pose/modules/gpnp1/init.cpp
 opengv/absolute_pose/modules/gpnp1/modules.hpp
 -
 
-/home/maxime/libraries/opengv/src/absolute_pose/modules/gpnp1/reductors.cpp
+/home/mferrera/libs/opengv/src/absolute_pose/modules/gpnp1/reductors.cpp
 opengv/absolute_pose/modules/gpnp1/modules.hpp
 -
 
-/home/maxime/libraries/opengv/src/absolute_pose/modules/gpnp1/spolynomials.cpp
+/home/mferrera/libs/opengv/src/absolute_pose/modules/gpnp1/spolynomials.cpp
 opengv/absolute_pose/modules/gpnp1/modules.hpp
 -
 
-/home/maxime/libraries/opengv/src/absolute_pose/modules/gpnp2/code.cpp
+/home/mferrera/libs/opengv/src/absolute_pose/modules/gpnp2/code.cpp
 opengv/absolute_pose/modules/gpnp2/modules.hpp
 -
 
-/home/maxime/libraries/opengv/src/absolute_pose/modules/gpnp2/init.cpp
+/home/mferrera/libs/opengv/src/absolute_pose/modules/gpnp2/init.cpp
 opengv/absolute_pose/modules/gpnp2/modules.hpp
 -
 
-/home/maxime/libraries/opengv/src/absolute_pose/modules/gpnp2/reductors.cpp
+/home/mferrera/libs/opengv/src/absolute_pose/modules/gpnp2/reductors.cpp
 opengv/absolute_pose/modules/gpnp2/modules.hpp
 -
 
-/home/maxime/libraries/opengv/src/absolute_pose/modules/gpnp2/spolynomials.cpp
+/home/mferrera/libs/opengv/src/absolute_pose/modules/gpnp2/spolynomials.cpp
 opengv/absolute_pose/modules/gpnp2/modules.hpp
 -
 
-/home/maxime/libraries/opengv/src/absolute_pose/modules/gpnp3/code.cpp
+/home/mferrera/libs/opengv/src/absolute_pose/modules/gpnp3/code.cpp
 opengv/absolute_pose/modules/gpnp3/modules.hpp
 -
 
-/home/maxime/libraries/opengv/src/absolute_pose/modules/gpnp3/init.cpp
+/home/mferrera/libs/opengv/src/absolute_pose/modules/gpnp3/init.cpp
 opengv/absolute_pose/modules/gpnp3/modules.hpp
 -
 
-/home/maxime/libraries/opengv/src/absolute_pose/modules/gpnp3/reductors.cpp
+/home/mferrera/libs/opengv/src/absolute_pose/modules/gpnp3/reductors.cpp
 opengv/absolute_pose/modules/gpnp3/modules.hpp
 -
 
-/home/maxime/libraries/opengv/src/absolute_pose/modules/gpnp3/spolynomials.cpp
+/home/mferrera/libs/opengv/src/absolute_pose/modules/gpnp3/spolynomials.cpp
 opengv/absolute_pose/modules/gpnp3/modules.hpp
 -
 
-/home/maxime/libraries/opengv/src/absolute_pose/modules/gpnp4/code.cpp
+/home/mferrera/libs/opengv/src/absolute_pose/modules/gpnp4/code.cpp
 opengv/absolute_pose/modules/gpnp4/modules.hpp
 -
 
-/home/maxime/libraries/opengv/src/absolute_pose/modules/gpnp4/init.cpp
+/home/mferrera/libs/opengv/src/absolute_pose/modules/gpnp4/init.cpp
 opengv/absolute_pose/modules/gpnp4/modules.hpp
 -
 
-/home/maxime/libraries/opengv/src/absolute_pose/modules/gpnp4/reductors.cpp
+/home/mferrera/libs/opengv/src/absolute_pose/modules/gpnp4/reductors.cpp
 opengv/absolute_pose/modules/gpnp4/modules.hpp
 -
 
-/home/maxime/libraries/opengv/src/absolute_pose/modules/gpnp4/spolynomials.cpp
+/home/mferrera/libs/opengv/src/absolute_pose/modules/gpnp4/spolynomials.cpp
 opengv/absolute_pose/modules/gpnp4/modules.hpp
 -
 
-/home/maxime/libraries/opengv/src/absolute_pose/modules/gpnp5/code.cpp
+/home/mferrera/libs/opengv/src/absolute_pose/modules/gpnp5/code.cpp
 opengv/absolute_pose/modules/gpnp5/modules.hpp
 -
 
-/home/maxime/libraries/opengv/src/absolute_pose/modules/gpnp5/init.cpp
+/home/mferrera/libs/opengv/src/absolute_pose/modules/gpnp5/init.cpp
 opengv/absolute_pose/modules/gpnp5/modules.hpp
 -
 
-/home/maxime/libraries/opengv/src/absolute_pose/modules/gpnp5/reductors.cpp
+/home/mferrera/libs/opengv/src/absolute_pose/modules/gpnp5/reductors.cpp
 opengv/absolute_pose/modules/gpnp5/modules.hpp
 -
 
-/home/maxime/libraries/opengv/src/absolute_pose/modules/gpnp5/spolynomials.cpp
+/home/mferrera/libs/opengv/src/absolute_pose/modules/gpnp5/spolynomials.cpp
 opengv/absolute_pose/modules/gpnp5/modules.hpp
 -
 
-/home/maxime/libraries/opengv/src/absolute_pose/modules/main.cpp
+/home/mferrera/libs/opengv/src/absolute_pose/modules/main.cpp
 Eigen/NonLinearOptimization
 -
 Eigen/NumericalDiff
@@ -772,7 +772,7 @@ opengv/math/arun.hpp
 opengv/math/cayley.hpp
 -
 
-/home/maxime/libraries/opengv/src/absolute_pose/modules/upnp2.cpp
+/home/mferrera/libs/opengv/src/absolute_pose/modules/upnp2.cpp
 opengv/absolute_pose/modules/upnp2.hpp
 -
 opengv/math/gauss_jordan.hpp
@@ -780,7 +780,7 @@ opengv/math/gauss_jordan.hpp
 opengv/math/roots.hpp
 -
 
-/home/maxime/libraries/opengv/src/absolute_pose/modules/upnp4.cpp
+/home/mferrera/libs/opengv/src/absolute_pose/modules/upnp4.cpp
 opengv/absolute_pose/modules/upnp4.hpp
 -
 opengv/math/gauss_jordan.hpp
@@ -788,45 +788,45 @@ opengv/math/gauss_jordan.hpp
 opengv/math/roots.hpp
 -
 
-/home/maxime/libraries/opengv/src/math/Sturm.cpp
+/home/mferrera/libs/opengv/src/math/Sturm.cpp
 opengv/math/Sturm.hpp
 -
 iostream
 -
 
-/home/maxime/libraries/opengv/src/math/arun.cpp
+/home/mferrera/libs/opengv/src/math/arun.cpp
 opengv/math/arun.hpp
 -
 
-/home/maxime/libraries/opengv/src/math/cayley.cpp
+/home/mferrera/libs/opengv/src/math/cayley.cpp
 opengv/math/cayley.hpp
 -
 
-/home/maxime/libraries/opengv/src/math/gauss_jordan.cpp
+/home/mferrera/libs/opengv/src/math/gauss_jordan.cpp
 opengv/math/gauss_jordan.hpp
 -
 math.h
 -
 
-/home/maxime/libraries/opengv/src/math/quaternion.cpp
+/home/mferrera/libs/opengv/src/math/quaternion.cpp
 opengv/math/quaternion.hpp
 -
 
-/home/maxime/libraries/opengv/src/math/roots.cpp
+/home/mferrera/libs/opengv/src/math/roots.cpp
 opengv/math/roots.hpp
 -
 complex
 -
 
-/home/maxime/libraries/opengv/src/point_cloud/MAPointCloud.cpp
+/home/mferrera/libs/opengv/src/point_cloud/MAPointCloud.cpp
 opengv/point_cloud/MAPointCloud.hpp
 -
 
-/home/maxime/libraries/opengv/src/point_cloud/PointCloudAdapter.cpp
+/home/mferrera/libs/opengv/src/point_cloud/PointCloudAdapter.cpp
 opengv/point_cloud/PointCloudAdapter.hpp
 -
 
-/home/maxime/libraries/opengv/src/point_cloud/methods.cpp
+/home/mferrera/libs/opengv/src/point_cloud/methods.cpp
 opengv/point_cloud/methods.hpp
 -
 opengv/Indices.hpp
@@ -842,39 +842,39 @@ opengv/math/arun.hpp
 opengv/math/cayley.hpp
 -
 
-/home/maxime/libraries/opengv/src/relative_pose/CentralRelativeAdapter.cpp
+/home/mferrera/libs/opengv/src/relative_pose/CentralRelativeAdapter.cpp
 opengv/relative_pose/CentralRelativeAdapter.hpp
 -
 
-/home/maxime/libraries/opengv/src/relative_pose/CentralRelativeMultiAdapter.cpp
+/home/mferrera/libs/opengv/src/relative_pose/CentralRelativeMultiAdapter.cpp
 opengv/relative_pose/CentralRelativeMultiAdapter.hpp
 -
 
-/home/maxime/libraries/opengv/src/relative_pose/CentralRelativeWeightingAdapter.cpp
+/home/mferrera/libs/opengv/src/relative_pose/CentralRelativeWeightingAdapter.cpp
 opengv/relative_pose/CentralRelativeWeightingAdapter.hpp
 -
 
-/home/maxime/libraries/opengv/src/relative_pose/MACentralRelative.cpp
+/home/mferrera/libs/opengv/src/relative_pose/MACentralRelative.cpp
 opengv/relative_pose/MACentralRelative.hpp
 -
 
-/home/maxime/libraries/opengv/src/relative_pose/MANoncentralRelative.cpp
+/home/mferrera/libs/opengv/src/relative_pose/MANoncentralRelative.cpp
 opengv/relative_pose/MANoncentralRelative.hpp
 -
 
-/home/maxime/libraries/opengv/src/relative_pose/MANoncentralRelativeMulti.cpp
+/home/mferrera/libs/opengv/src/relative_pose/MANoncentralRelativeMulti.cpp
 opengv/relative_pose/MANoncentralRelativeMulti.hpp
 -
 
-/home/maxime/libraries/opengv/src/relative_pose/NoncentralRelativeAdapter.cpp
+/home/mferrera/libs/opengv/src/relative_pose/NoncentralRelativeAdapter.cpp
 opengv/relative_pose/NoncentralRelativeAdapter.hpp
 -
 
-/home/maxime/libraries/opengv/src/relative_pose/NoncentralRelativeMultiAdapter.cpp
+/home/mferrera/libs/opengv/src/relative_pose/NoncentralRelativeMultiAdapter.cpp
 opengv/relative_pose/NoncentralRelativeMultiAdapter.hpp
 -
 
-/home/maxime/libraries/opengv/src/relative_pose/methods.cpp
+/home/mferrera/libs/opengv/src/relative_pose/methods.cpp
 opengv/relative_pose/methods.hpp
 -
 opengv/Indices.hpp
@@ -896,7 +896,7 @@ opengv/triangulation/methods.hpp
 iostream
 -
 
-/home/maxime/libraries/opengv/src/relative_pose/modules/eigensolver/modules.cpp
+/home/mferrera/libs/opengv/src/relative_pose/modules/eigensolver/modules.cpp
 opengv/relative_pose/modules/eigensolver/modules.hpp
 -
 opengv/math/cayley.hpp
@@ -904,23 +904,23 @@ opengv/math/cayley.hpp
 iostream
 -
 
-/home/maxime/libraries/opengv/src/relative_pose/modules/fivept_kneip/code.cpp
+/home/mferrera/libs/opengv/src/relative_pose/modules/fivept_kneip/code.cpp
 opengv/relative_pose/modules/fivept_kneip/modules.hpp
 -
 
-/home/maxime/libraries/opengv/src/relative_pose/modules/fivept_kneip/init.cpp
+/home/mferrera/libs/opengv/src/relative_pose/modules/fivept_kneip/init.cpp
 opengv/relative_pose/modules/fivept_kneip/modules.hpp
 -
 
-/home/maxime/libraries/opengv/src/relative_pose/modules/fivept_kneip/reductors.cpp
+/home/mferrera/libs/opengv/src/relative_pose/modules/fivept_kneip/reductors.cpp
 opengv/relative_pose/modules/fivept_kneip/modules.hpp
 -
 
-/home/maxime/libraries/opengv/src/relative_pose/modules/fivept_kneip/spolynomials.cpp
+/home/mferrera/libs/opengv/src/relative_pose/modules/fivept_kneip/spolynomials.cpp
 opengv/relative_pose/modules/fivept_kneip/modules.hpp
 -
 
-/home/maxime/libraries/opengv/src/relative_pose/modules/fivept_nister/modules.cpp
+/home/mferrera/libs/opengv/src/relative_pose/modules/fivept_nister/modules.cpp
 opengv/relative_pose/modules/fivept_nister/modules.hpp
 -
 Eigen/NonLinearOptimization
@@ -930,11 +930,11 @@ Eigen/NumericalDiff
 opengv/OptimizationFunctor.hpp
 -
 
-/home/maxime/libraries/opengv/src/relative_pose/modules/fivept_stewenius/modules.cpp
+/home/mferrera/libs/opengv/src/relative_pose/modules/fivept_stewenius/modules.cpp
 opengv/relative_pose/modules/fivept_stewenius/modules.hpp
 -
 
-/home/maxime/libraries/opengv/src/relative_pose/modules/ge/modules.cpp
+/home/mferrera/libs/opengv/src/relative_pose/modules/ge/modules.cpp
 opengv/relative_pose/modules/ge/modules.hpp
 -
 opengv/math/cayley.hpp
@@ -942,7 +942,7 @@ opengv/math/cayley.hpp
 iostream
 -
 
-/home/maxime/libraries/opengv/src/relative_pose/modules/main.cpp
+/home/mferrera/libs/opengv/src/relative_pose/modules/main.cpp
 math.h
 -
 vector
@@ -978,7 +978,7 @@ stdio.h
 iostream
 -
 
-/home/maxime/libraries/opengv/src/relative_pose/modules/sixpt/modules2.cpp
+/home/mferrera/libs/opengv/src/relative_pose/modules/sixpt/modules2.cpp
 opengv/relative_pose/modules/sixpt/modules.hpp
 -
 opengv/math/gauss_jordan.hpp
@@ -990,25 +990,25 @@ stdlib.h
 stdio.h
 -
 
-/home/maxime/libraries/opengv/src/sac_problems/absolute_pose/AbsolutePoseSacProblem.cpp
+/home/mferrera/libs/opengv/src/sac_problems/absolute_pose/AbsolutePoseSacProblem.cpp
 opengv/sac_problems/absolute_pose/AbsolutePoseSacProblem.hpp
 -
 opengv/absolute_pose/methods.hpp
 -
 
-/home/maxime/libraries/opengv/src/sac_problems/absolute_pose/MultiNoncentralAbsolutePoseSacProblem.cpp
+/home/mferrera/libs/opengv/src/sac_problems/absolute_pose/MultiNoncentralAbsolutePoseSacProblem.cpp
 opengv/sac_problems/absolute_pose/MultiNoncentralAbsolutePoseSacProblem.hpp
 -
 opengv/absolute_pose/methods.hpp
 -
 
-/home/maxime/libraries/opengv/src/sac_problems/point_cloud/PointCloudSacProblem.cpp
+/home/mferrera/libs/opengv/src/sac_problems/point_cloud/PointCloudSacProblem.cpp
 opengv/sac_problems/point_cloud/PointCloudSacProblem.hpp
 -
 opengv/point_cloud/methods.hpp
 -
 
-/home/maxime/libraries/opengv/src/sac_problems/relative_pose/CentralRelativePoseSacProblem.cpp
+/home/mferrera/libs/opengv/src/sac_problems/relative_pose/CentralRelativePoseSacProblem.cpp
 opengv/sac_problems/relative_pose/CentralRelativePoseSacProblem.hpp
 -
 opengv/relative_pose/methods.hpp
@@ -1020,7 +1020,7 @@ Eigen/NonLinearOptimization
 Eigen/NumericalDiff
 -
 
-/home/maxime/libraries/opengv/src/sac_problems/relative_pose/EigensolverSacProblem.cpp
+/home/mferrera/libs/opengv/src/sac_problems/relative_pose/EigensolverSacProblem.cpp
 opengv/sac_problems/relative_pose/EigensolverSacProblem.hpp
 -
 opengv/relative_pose/methods.hpp
@@ -1030,7 +1030,7 @@ opengv/math/cayley.hpp
 opengv/triangulation/methods.hpp
 -
 
-/home/maxime/libraries/opengv/src/sac_problems/relative_pose/MultiCentralRelativePoseSacProblem.cpp
+/home/mferrera/libs/opengv/src/sac_problems/relative_pose/MultiCentralRelativePoseSacProblem.cpp
 opengv/sac_problems/relative_pose/MultiCentralRelativePoseSacProblem.hpp
 -
 opengv/relative_pose/methods.hpp
@@ -1042,7 +1042,7 @@ Eigen/NonLinearOptimization
 Eigen/NumericalDiff
 -
 
-/home/maxime/libraries/opengv/src/sac_problems/relative_pose/MultiNoncentralRelativePoseSacProblem.cpp
+/home/mferrera/libs/opengv/src/sac_problems/relative_pose/MultiNoncentralRelativePoseSacProblem.cpp
 opengv/sac_problems/relative_pose/MultiNoncentralRelativePoseSacProblem.hpp
 -
 opengv/relative_pose/methods.hpp
@@ -1056,7 +1056,7 @@ Eigen/NumericalDiff
 opengv/sac_problems/relative_pose/CentralRelativePoseSacProblem.hpp
 -
 
-/home/maxime/libraries/opengv/src/sac_problems/relative_pose/NoncentralRelativePoseSacProblem.cpp
+/home/mferrera/libs/opengv/src/sac_problems/relative_pose/NoncentralRelativePoseSacProblem.cpp
 opengv/sac_problems/relative_pose/NoncentralRelativePoseSacProblem.hpp
 -
 opengv/relative_pose/methods.hpp
@@ -1070,7 +1070,7 @@ Eigen/NumericalDiff
 opengv/sac_problems/relative_pose/CentralRelativePoseSacProblem.hpp
 -
 
-/home/maxime/libraries/opengv/src/sac_problems/relative_pose/RotationOnlySacProblem.cpp
+/home/mferrera/libs/opengv/src/sac_problems/relative_pose/RotationOnlySacProblem.cpp
 opengv/sac_problems/relative_pose/RotationOnlySacProblem.hpp
 -
 opengv/relative_pose/methods.hpp
@@ -1082,7 +1082,7 @@ Eigen/NonLinearOptimization
 Eigen/NumericalDiff
 -
 
-/home/maxime/libraries/opengv/src/sac_problems/relative_pose/TranslationOnlySacProblem.cpp
+/home/mferrera/libs/opengv/src/sac_problems/relative_pose/TranslationOnlySacProblem.cpp
 opengv/sac_problems/relative_pose/TranslationOnlySacProblem.hpp
 -
 opengv/relative_pose/methods.hpp
@@ -1090,7 +1090,7 @@ opengv/relative_pose/methods.hpp
 opengv/triangulation/methods.hpp
 -
 
-/home/maxime/libraries/opengv/src/triangulation/methods.cpp
+/home/mferrera/libs/opengv/src/triangulation/methods.cpp
 opengv/triangulation/methods.hpp
 -
 Eigen/Eigenvalues
@@ -1101,6 +1101,8 @@ Core
 /usr/include/eigen3/Eigen/Core
 src/Core/util/DisableStupidWarnings.h
 /usr/include/eigen3/Eigen/src/Core/util/DisableStupidWarnings.h
+src/misc/Solve.h
+/usr/include/eigen3/Eigen/src/misc/Solve.h
 src/Cholesky/LLT.h
 /usr/include/eigen3/Eigen/src/Cholesky/LLT.h
 src/Cholesky/LDLT.h
@@ -1113,8 +1115,6 @@ src/Core/util/ReenableStupidWarnings.h
 /usr/include/eigen3/Eigen/Core
 src/Core/util/DisableStupidWarnings.h
 /usr/include/eigen3/Eigen/src/Core/util/DisableStupidWarnings.h
-new
--
 src/Core/util/Macros.h
 /usr/include/eigen3/Eigen/src/Core/util/Macros.h
 complex
@@ -1137,15 +1137,9 @@ smmintrin.h
 -
 nmmintrin.h
 -
-immintrin.h
--
-altivec.h
--
 altivec.h
 -
 arm_neon.h
--
-vector_types.h
 -
 omp.h
 -
@@ -1177,12 +1171,14 @@ iostream
 -
 intrin.h
 -
+new
+-
 src/Core/util/Constants.h
 /usr/include/eigen3/Eigen/src/Core/util/Constants.h
-src/Core/util/Meta.h
-/usr/include/eigen3/Eigen/src/Core/util/Meta.h
 src/Core/util/ForwardDeclarations.h
 /usr/include/eigen3/Eigen/src/Core/util/ForwardDeclarations.h
+src/Core/util/Meta.h
+/usr/include/eigen3/Eigen/src/Core/util/Meta.h
 src/Core/util/StaticAssert.h
 /usr/include/eigen3/Eigen/src/Core/util/StaticAssert.h
 src/Core/util/XprHelper.h
@@ -1193,60 +1189,26 @@ src/Core/NumTraits.h
 /usr/include/eigen3/Eigen/src/Core/NumTraits.h
 src/Core/MathFunctions.h
 /usr/include/eigen3/Eigen/src/Core/MathFunctions.h
-src/Core/SpecialFunctions.h
-/usr/include/eigen3/Eigen/src/Core/SpecialFunctions.h
 src/Core/GenericPacketMath.h
 /usr/include/eigen3/Eigen/src/Core/GenericPacketMath.h
 src/Core/arch/SSE/PacketMath.h
 /usr/include/eigen3/Eigen/src/Core/arch/SSE/PacketMath.h
-src/Core/arch/SSE/Complex.h
-/usr/include/eigen3/Eigen/src/Core/arch/SSE/Complex.h
-src/Core/arch/SSE/MathFunctions.h
-/usr/include/eigen3/Eigen/src/Core/arch/SSE/MathFunctions.h
-src/Core/arch/AVX/PacketMath.h
-/usr/include/eigen3/Eigen/src/Core/arch/AVX/PacketMath.h
-src/Core/arch/AVX/MathFunctions.h
-/usr/include/eigen3/Eigen/src/Core/arch/AVX/MathFunctions.h
-src/Core/arch/AVX/Complex.h
-/usr/include/eigen3/Eigen/src/Core/arch/AVX/Complex.h
-src/Core/arch/AVX/TypeCasting.h
-/usr/include/eigen3/Eigen/src/Core/arch/AVX/TypeCasting.h
-src/Core/arch/SSE/PacketMath.h
-/usr/include/eigen3/Eigen/src/Core/arch/SSE/PacketMath.h
 src/Core/arch/SSE/MathFunctions.h
 /usr/include/eigen3/Eigen/src/Core/arch/SSE/MathFunctions.h
 src/Core/arch/SSE/Complex.h
 /usr/include/eigen3/Eigen/src/Core/arch/SSE/Complex.h
-src/Core/arch/SSE/TypeCasting.h
-/usr/include/eigen3/Eigen/src/Core/arch/SSE/TypeCasting.h
 src/Core/arch/AltiVec/PacketMath.h
 /usr/include/eigen3/Eigen/src/Core/arch/AltiVec/PacketMath.h
-src/Core/arch/AltiVec/MathFunctions.h
-/usr/include/eigen3/Eigen/src/Core/arch/AltiVec/MathFunctions.h
 src/Core/arch/AltiVec/Complex.h
 /usr/include/eigen3/Eigen/src/Core/arch/AltiVec/Complex.h
 src/Core/arch/NEON/PacketMath.h
 /usr/include/eigen3/Eigen/src/Core/arch/NEON/PacketMath.h
-src/Core/arch/NEON/MathFunctions.h
-/usr/include/eigen3/Eigen/src/Core/arch/NEON/MathFunctions.h
 src/Core/arch/NEON/Complex.h
 /usr/include/eigen3/Eigen/src/Core/arch/NEON/Complex.h
-src/Core/arch/CUDA/PacketMath.h
-/usr/include/eigen3/Eigen/src/Core/arch/CUDA/PacketMath.h
-src/Core/arch/CUDA/MathFunctions.h
-/usr/include/eigen3/Eigen/src/Core/arch/CUDA/MathFunctions.h
 src/Core/arch/Default/Settings.h
 /usr/include/eigen3/Eigen/src/Core/arch/Default/Settings.h
-src/Core/functors/BinaryFunctors.h
-/usr/include/eigen3/Eigen/src/Core/functors/BinaryFunctors.h
-src/Core/functors/UnaryFunctors.h
-/usr/include/eigen3/Eigen/src/Core/functors/UnaryFunctors.h
-src/Core/functors/NullaryFunctors.h
-/usr/include/eigen3/Eigen/src/Core/functors/NullaryFunctors.h
-src/Core/functors/StlFunctors.h
-/usr/include/eigen3/Eigen/src/Core/functors/StlFunctors.h
-src/Core/functors/AssignmentFunctors.h
-/usr/include/eigen3/Eigen/src/Core/functors/AssignmentFunctors.h
+src/Core/Functors.h
+/usr/include/eigen3/Eigen/src/Core/Functors.h
 src/Core/DenseCoeffsBase.h
 /usr/include/eigen3/Eigen/src/Core/DenseCoeffsBase.h
 src/Core/DenseBase.h
@@ -1255,22 +1217,16 @@ src/Core/MatrixBase.h
 /usr/include/eigen3/Eigen/src/Core/MatrixBase.h
 src/Core/EigenBase.h
 /usr/include/eigen3/Eigen/src/Core/EigenBase.h
-src/Core/Product.h
-/usr/include/eigen3/Eigen/src/Core/Product.h
-src/Core/CoreEvaluators.h
-/usr/include/eigen3/Eigen/src/Core/CoreEvaluators.h
-src/Core/AssignEvaluator.h
-/usr/include/eigen3/Eigen/src/Core/AssignEvaluator.h
 src/Core/Assign.h
 /usr/include/eigen3/Eigen/src/Core/Assign.h
-src/Core/ArrayBase.h
-/usr/include/eigen3/Eigen/src/Core/ArrayBase.h
 src/Core/util/BlasUtil.h
 /usr/include/eigen3/Eigen/src/Core/util/BlasUtil.h
 src/Core/DenseStorage.h
 /usr/include/eigen3/Eigen/src/Core/DenseStorage.h
 src/Core/NestByValue.h
 /usr/include/eigen3/Eigen/src/Core/NestByValue.h
+src/Core/ForceAlignedAccess.h
+/usr/include/eigen3/Eigen/src/Core/ForceAlignedAccess.h
 src/Core/ReturnByValue.h
 /usr/include/eigen3/Eigen/src/Core/ReturnByValue.h
 src/Core/NoAlias.h
@@ -1295,18 +1251,18 @@ src/Core/Dot.h
 /usr/include/eigen3/Eigen/src/Core/Dot.h
 src/Core/StableNorm.h
 /usr/include/eigen3/Eigen/src/Core/StableNorm.h
-src/Core/Stride.h
-/usr/include/eigen3/Eigen/src/Core/Stride.h
 src/Core/MapBase.h
 /usr/include/eigen3/Eigen/src/Core/MapBase.h
+src/Core/Stride.h
+/usr/include/eigen3/Eigen/src/Core/Stride.h
 src/Core/Map.h
 /usr/include/eigen3/Eigen/src/Core/Map.h
-src/Core/Ref.h
-/usr/include/eigen3/Eigen/src/Core/Ref.h
 src/Core/Block.h
 /usr/include/eigen3/Eigen/src/Core/Block.h
 src/Core/VectorBlock.h
 /usr/include/eigen3/Eigen/src/Core/VectorBlock.h
+src/Core/Ref.h
+/usr/include/eigen3/Eigen/src/Core/Ref.h
 src/Core/Transpose.h
 /usr/include/eigen3/Eigen/src/Core/Transpose.h
 src/Core/DiagonalMatrix.h
@@ -1315,6 +1271,10 @@ src/Core/Diagonal.h
 /usr/include/eigen3/Eigen/src/Core/Diagonal.h
 src/Core/DiagonalProduct.h
 /usr/include/eigen3/Eigen/src/Core/DiagonalProduct.h
+src/Core/PermutationMatrix.h
+/usr/include/eigen3/Eigen/src/Core/PermutationMatrix.h
+src/Core/Transpositions.h
+/usr/include/eigen3/Eigen/src/Core/Transpositions.h
 src/Core/Redux.h
 /usr/include/eigen3/Eigen/src/Core/Redux.h
 src/Core/Visitor.h
@@ -1327,18 +1287,12 @@ src/Core/Swap.h
 /usr/include/eigen3/Eigen/src/Core/Swap.h
 src/Core/CommaInitializer.h
 /usr/include/eigen3/Eigen/src/Core/CommaInitializer.h
+src/Core/Flagged.h
+/usr/include/eigen3/Eigen/src/Core/Flagged.h
+src/Core/ProductBase.h
+/usr/include/eigen3/Eigen/src/Core/ProductBase.h
 src/Core/GeneralProduct.h
 /usr/include/eigen3/Eigen/src/Core/GeneralProduct.h
-src/Core/Solve.h
-/usr/include/eigen3/Eigen/src/Core/Solve.h
-src/Core/Inverse.h
-/usr/include/eigen3/Eigen/src/Core/Inverse.h
-src/Core/SolverBase.h
-/usr/include/eigen3/Eigen/src/Core/SolverBase.h
-src/Core/PermutationMatrix.h
-/usr/include/eigen3/Eigen/src/Core/PermutationMatrix.h
-src/Core/Transpositions.h
-/usr/include/eigen3/Eigen/src/Core/Transpositions.h
 src/Core/TriangularMatrix.h
 /usr/include/eigen3/Eigen/src/Core/TriangularMatrix.h
 src/Core/SelfAdjointView.h
@@ -1347,8 +1301,8 @@ src/Core/products/GeneralBlockPanelKernel.h
 /usr/include/eigen3/Eigen/src/Core/products/GeneralBlockPanelKernel.h
 src/Core/products/Parallelizer.h
 /usr/include/eigen3/Eigen/src/Core/products/Parallelizer.h
-src/Core/ProductEvaluators.h
-/usr/include/eigen3/Eigen/src/Core/ProductEvaluators.h
+src/Core/products/CoeffBasedProduct.h
+/usr/include/eigen3/Eigen/src/Core/products/CoeffBasedProduct.h
 src/Core/products/GeneralMatrixVector.h
 /usr/include/eigen3/Eigen/src/Core/products/GeneralMatrixVector.h
 src/Core/products/GeneralMatrixMatrix.h
@@ -1389,6 +1343,8 @@ src/Core/Replicate.h
 /usr/include/eigen3/Eigen/src/Core/Replicate.h
 src/Core/Reverse.h
 /usr/include/eigen3/Eigen/src/Core/Reverse.h
+src/Core/ArrayBase.h
+/usr/include/eigen3/Eigen/src/Core/ArrayBase.h
 src/Core/ArrayWrapper.h
 /usr/include/eigen3/Eigen/src/Core/ArrayWrapper.h
 src/Core/products/GeneralMatrixMatrix_MKL.h
@@ -1413,6 +1369,8 @@ src/Core/GlobalFunctions.h
 /usr/include/eigen3/Eigen/src/Core/GlobalFunctions.h
 src/Core/util/ReenableStupidWarnings.h
 /usr/include/eigen3/Eigen/src/Core/util/ReenableStupidWarnings.h
+Eigen2Support
+/usr/include/eigen3/Eigen/Eigen2Support
 
 /usr/include/eigen3/Eigen/Dense
 Core
@@ -1433,8 +1391,36 @@ Eigenvalues
 /usr/include/eigen3/Eigen/Eigen
 Dense
 /usr/include/eigen3/Eigen/Dense
-Sparse
-/usr/include/eigen3/Eigen/Sparse
+
+/usr/include/eigen3/Eigen/Eigen2Support
+src/Core/util/DisableStupidWarnings.h
+/usr/include/eigen3/Eigen/src/Core/util/DisableStupidWarnings.h
+src/Eigen2Support/Macros.h
+/usr/include/eigen3/Eigen/src/Eigen2Support/Macros.h
+src/Eigen2Support/Memory.h
+/usr/include/eigen3/Eigen/src/Eigen2Support/Memory.h
+src/Eigen2Support/Meta.h
+/usr/include/eigen3/Eigen/src/Eigen2Support/Meta.h
+src/Eigen2Support/Lazy.h
+/usr/include/eigen3/Eigen/src/Eigen2Support/Lazy.h
+src/Eigen2Support/Cwise.h
+/usr/include/eigen3/Eigen/src/Eigen2Support/Cwise.h
+src/Eigen2Support/CwiseOperators.h
+/usr/include/eigen3/Eigen/src/Eigen2Support/CwiseOperators.h
+src/Eigen2Support/TriangularSolver.h
+/usr/include/eigen3/Eigen/src/Eigen2Support/TriangularSolver.h
+src/Eigen2Support/Block.h
+/usr/include/eigen3/Eigen/src/Eigen2Support/Block.h
+src/Eigen2Support/VectorBlock.h
+/usr/include/eigen3/Eigen/src/Eigen2Support/VectorBlock.h
+src/Eigen2Support/Minor.h
+/usr/include/eigen3/Eigen/src/Eigen2Support/Minor.h
+src/Eigen2Support/MathFunctions.h
+/usr/include/eigen3/Eigen/src/Eigen2Support/MathFunctions.h
+src/Core/util/ReenableStupidWarnings.h
+/usr/include/eigen3/Eigen/src/Core/util/ReenableStupidWarnings.h
+iostream
+-
 
 /usr/include/eigen3/Eigen/Eigenvalues
 Core
@@ -1523,6 +1509,8 @@ src/Geometry/Umeyama.h
 /usr/include/eigen3/Eigen/src/Geometry/Umeyama.h
 src/Geometry/arch/Geometry_SSE.h
 /usr/include/eigen3/Eigen/src/Geometry/arch/Geometry_SSE.h
+src/Eigen2Support/Geometry/All.h
+/usr/include/eigen3/Eigen/src/Eigen2Support/Geometry/All.h
 src/Core/util/ReenableStupidWarnings.h
 /usr/include/eigen3/Eigen/src/Core/util/ReenableStupidWarnings.h
 
@@ -1537,34 +1525,6 @@ src/Householder/HouseholderSequence.h
 /usr/include/eigen3/Eigen/src/Householder/HouseholderSequence.h
 src/Householder/BlockHouseholder.h
 /usr/include/eigen3/Eigen/src/Householder/BlockHouseholder.h
-src/Core/util/ReenableStupidWarnings.h
-/usr/include/eigen3/Eigen/src/Core/util/ReenableStupidWarnings.h
-
-/usr/include/eigen3/Eigen/IterativeLinearSolvers
-SparseCore
-/usr/include/eigen3/Eigen/SparseCore
-OrderingMethods
-/usr/include/eigen3/Eigen/OrderingMethods
-src/Core/util/DisableStupidWarnings.h
-/usr/include/eigen3/Eigen/src/Core/util/DisableStupidWarnings.h
-Eigen/IterativeLinearSolvers
--
-src/IterativeLinearSolvers/SolveWithGuess.h
-/usr/include/eigen3/Eigen/src/IterativeLinearSolvers/SolveWithGuess.h
-src/IterativeLinearSolvers/IterativeSolverBase.h
-/usr/include/eigen3/Eigen/src/IterativeLinearSolvers/IterativeSolverBase.h
-src/IterativeLinearSolvers/BasicPreconditioners.h
-/usr/include/eigen3/Eigen/src/IterativeLinearSolvers/BasicPreconditioners.h
-src/IterativeLinearSolvers/ConjugateGradient.h
-/usr/include/eigen3/Eigen/src/IterativeLinearSolvers/ConjugateGradient.h
-src/IterativeLinearSolvers/LeastSquareConjugateGradient.h
-/usr/include/eigen3/Eigen/src/IterativeLinearSolvers/LeastSquareConjugateGradient.h
-src/IterativeLinearSolvers/BiCGSTAB.h
-/usr/include/eigen3/Eigen/src/IterativeLinearSolvers/BiCGSTAB.h
-src/IterativeLinearSolvers/IncompleteLUT.h
-/usr/include/eigen3/Eigen/src/IterativeLinearSolvers/IncompleteLUT.h
-src/IterativeLinearSolvers/IncompleteCholesky.h
-/usr/include/eigen3/Eigen/src/IterativeLinearSolvers/IncompleteCholesky.h
 src/Core/util/ReenableStupidWarnings.h
 /usr/include/eigen3/Eigen/src/Core/util/ReenableStupidWarnings.h
 
@@ -1583,6 +1543,8 @@ Core
 /usr/include/eigen3/Eigen/Core
 src/Core/util/DisableStupidWarnings.h
 /usr/include/eigen3/Eigen/src/Core/util/DisableStupidWarnings.h
+src/misc/Solve.h
+/usr/include/eigen3/Eigen/src/misc/Solve.h
 src/misc/Kernel.h
 /usr/include/eigen3/Eigen/src/misc/Kernel.h
 src/misc/Image.h
@@ -1595,22 +1557,12 @@ src/LU/PartialPivLU_MKL.h
 /usr/include/eigen3/Eigen/src/LU/PartialPivLU_MKL.h
 src/LU/Determinant.h
 /usr/include/eigen3/Eigen/src/LU/Determinant.h
-src/LU/InverseImpl.h
-/usr/include/eigen3/Eigen/src/LU/InverseImpl.h
+src/LU/Inverse.h
+/usr/include/eigen3/Eigen/src/LU/Inverse.h
 src/LU/arch/Inverse_SSE.h
 /usr/include/eigen3/Eigen/src/LU/arch/Inverse_SSE.h
-src/Core/util/ReenableStupidWarnings.h
-/usr/include/eigen3/Eigen/src/Core/util/ReenableStupidWarnings.h
-
-/usr/include/eigen3/Eigen/OrderingMethods
-SparseCore
-/usr/include/eigen3/Eigen/SparseCore
-src/Core/util/DisableStupidWarnings.h
-/usr/include/eigen3/Eigen/src/Core/util/DisableStupidWarnings.h
-src/OrderingMethods/Amd.h
-/usr/include/eigen3/Eigen/src/OrderingMethods/Amd.h
-src/OrderingMethods/Ordering.h
-/usr/include/eigen3/Eigen/src/OrderingMethods/Ordering.h
+src/Eigen2Support/LU.h
+/usr/include/eigen3/Eigen/src/Eigen2Support/LU.h
 src/Core/util/ReenableStupidWarnings.h
 /usr/include/eigen3/Eigen/src/Core/util/ReenableStupidWarnings.h
 
@@ -1625,6 +1577,8 @@ Jacobi
 /usr/include/eigen3/Eigen/Jacobi
 Householder
 /usr/include/eigen3/Eigen/Householder
+src/misc/Solve.h
+/usr/include/eigen3/Eigen/src/misc/Solve.h
 src/QR/HouseholderQR.h
 /usr/include/eigen3/Eigen/src/QR/HouseholderQR.h
 src/QR/FullPivHouseholderQR.h
@@ -1635,8 +1589,12 @@ src/QR/HouseholderQR_MKL.h
 /usr/include/eigen3/Eigen/src/QR/HouseholderQR_MKL.h
 src/QR/ColPivHouseholderQR_MKL.h
 /usr/include/eigen3/Eigen/src/QR/ColPivHouseholderQR_MKL.h
+src/Eigen2Support/QR.h
+/usr/include/eigen3/Eigen/src/Eigen2Support/QR.h
 src/Core/util/ReenableStupidWarnings.h
 /usr/include/eigen3/Eigen/src/Core/util/ReenableStupidWarnings.h
+Eigenvalues
+/usr/include/eigen3/Eigen/Eigenvalues
 
 /usr/include/eigen3/Eigen/SVD
 QR
@@ -1647,180 +1605,16 @@ Jacobi
 /usr/include/eigen3/Eigen/Jacobi
 src/Core/util/DisableStupidWarnings.h
 /usr/include/eigen3/Eigen/src/Core/util/DisableStupidWarnings.h
-src/SVD/UpperBidiagonalization.h
-/usr/include/eigen3/Eigen/src/SVD/UpperBidiagonalization.h
-src/SVD/SVDBase.h
-/usr/include/eigen3/Eigen/src/SVD/SVDBase.h
+src/misc/Solve.h
+/usr/include/eigen3/Eigen/src/misc/Solve.h
 src/SVD/JacobiSVD.h
 /usr/include/eigen3/Eigen/src/SVD/JacobiSVD.h
-src/SVD/BDCSVD.h
-/usr/include/eigen3/Eigen/src/SVD/BDCSVD.h
 src/SVD/JacobiSVD_MKL.h
 /usr/include/eigen3/Eigen/src/SVD/JacobiSVD_MKL.h
-src/Core/util/ReenableStupidWarnings.h
-/usr/include/eigen3/Eigen/src/Core/util/ReenableStupidWarnings.h
-
-/usr/include/eigen3/Eigen/Sparse
-Eigen/Sparse
--
-SparseCore
-/usr/include/eigen3/Eigen/SparseCore
-OrderingMethods
-/usr/include/eigen3/Eigen/OrderingMethods
-SparseCholesky
-/usr/include/eigen3/Eigen/SparseCholesky
-SparseLU
-/usr/include/eigen3/Eigen/SparseLU
-SparseQR
-/usr/include/eigen3/Eigen/SparseQR
-IterativeLinearSolvers
-/usr/include/eigen3/Eigen/IterativeLinearSolvers
-
-/usr/include/eigen3/Eigen/SparseCholesky
-SparseCore
-/usr/include/eigen3/Eigen/SparseCore
-OrderingMethods
-/usr/include/eigen3/Eigen/OrderingMethods
-src/Core/util/DisableStupidWarnings.h
-/usr/include/eigen3/Eigen/src/Core/util/DisableStupidWarnings.h
-src/SparseCholesky/SimplicialCholesky.h
-/usr/include/eigen3/Eigen/src/SparseCholesky/SimplicialCholesky.h
-src/SparseCholesky/SimplicialCholesky_impl.h
-/usr/include/eigen3/Eigen/src/SparseCholesky/SimplicialCholesky_impl.h
-src/Core/util/ReenableStupidWarnings.h
-/usr/include/eigen3/Eigen/src/Core/util/ReenableStupidWarnings.h
-
-/usr/include/eigen3/Eigen/SparseCore
-Core
-/usr/include/eigen3/Eigen/Core
-src/Core/util/DisableStupidWarnings.h
-/usr/include/eigen3/Eigen/src/Core/util/DisableStupidWarnings.h
-vector
--
-map
--
-cstdlib
--
-cstring
--
-algorithm
--
-src/SparseCore/SparseUtil.h
-/usr/include/eigen3/Eigen/src/SparseCore/SparseUtil.h
-src/SparseCore/SparseMatrixBase.h
-/usr/include/eigen3/Eigen/src/SparseCore/SparseMatrixBase.h
-src/SparseCore/SparseAssign.h
-/usr/include/eigen3/Eigen/src/SparseCore/SparseAssign.h
-src/SparseCore/CompressedStorage.h
-/usr/include/eigen3/Eigen/src/SparseCore/CompressedStorage.h
-src/SparseCore/AmbiVector.h
-/usr/include/eigen3/Eigen/src/SparseCore/AmbiVector.h
-src/SparseCore/SparseCompressedBase.h
-/usr/include/eigen3/Eigen/src/SparseCore/SparseCompressedBase.h
-src/SparseCore/SparseMatrix.h
-/usr/include/eigen3/Eigen/src/SparseCore/SparseMatrix.h
-src/SparseCore/SparseMap.h
-/usr/include/eigen3/Eigen/src/SparseCore/SparseMap.h
-src/SparseCore/MappedSparseMatrix.h
-/usr/include/eigen3/Eigen/src/SparseCore/MappedSparseMatrix.h
-src/SparseCore/SparseVector.h
-/usr/include/eigen3/Eigen/src/SparseCore/SparseVector.h
-src/SparseCore/SparseRef.h
-/usr/include/eigen3/Eigen/src/SparseCore/SparseRef.h
-src/SparseCore/SparseCwiseUnaryOp.h
-/usr/include/eigen3/Eigen/src/SparseCore/SparseCwiseUnaryOp.h
-src/SparseCore/SparseCwiseBinaryOp.h
-/usr/include/eigen3/Eigen/src/SparseCore/SparseCwiseBinaryOp.h
-src/SparseCore/SparseTranspose.h
-/usr/include/eigen3/Eigen/src/SparseCore/SparseTranspose.h
-src/SparseCore/SparseBlock.h
-/usr/include/eigen3/Eigen/src/SparseCore/SparseBlock.h
-src/SparseCore/SparseDot.h
-/usr/include/eigen3/Eigen/src/SparseCore/SparseDot.h
-src/SparseCore/SparseRedux.h
-/usr/include/eigen3/Eigen/src/SparseCore/SparseRedux.h
-src/SparseCore/SparseView.h
-/usr/include/eigen3/Eigen/src/SparseCore/SparseView.h
-src/SparseCore/SparseDiagonalProduct.h
-/usr/include/eigen3/Eigen/src/SparseCore/SparseDiagonalProduct.h
-src/SparseCore/ConservativeSparseSparseProduct.h
-/usr/include/eigen3/Eigen/src/SparseCore/ConservativeSparseSparseProduct.h
-src/SparseCore/SparseSparseProductWithPruning.h
-/usr/include/eigen3/Eigen/src/SparseCore/SparseSparseProductWithPruning.h
-src/SparseCore/SparseProduct.h
-/usr/include/eigen3/Eigen/src/SparseCore/SparseProduct.h
-src/SparseCore/SparseDenseProduct.h
-/usr/include/eigen3/Eigen/src/SparseCore/SparseDenseProduct.h
-src/SparseCore/SparseSelfAdjointView.h
-/usr/include/eigen3/Eigen/src/SparseCore/SparseSelfAdjointView.h
-src/SparseCore/SparseTriangularView.h
-/usr/include/eigen3/Eigen/src/SparseCore/SparseTriangularView.h
-src/SparseCore/TriangularSolver.h
-/usr/include/eigen3/Eigen/src/SparseCore/TriangularSolver.h
-src/SparseCore/SparsePermutation.h
-/usr/include/eigen3/Eigen/src/SparseCore/SparsePermutation.h
-src/SparseCore/SparseFuzzy.h
-/usr/include/eigen3/Eigen/src/SparseCore/SparseFuzzy.h
-src/SparseCore/SparseSolverBase.h
-/usr/include/eigen3/Eigen/src/SparseCore/SparseSolverBase.h
-src/Core/util/ReenableStupidWarnings.h
-/usr/include/eigen3/Eigen/src/Core/util/ReenableStupidWarnings.h
-
-/usr/include/eigen3/Eigen/SparseLU
-SparseCore
-/usr/include/eigen3/Eigen/SparseCore
-OrderingMethods
-/usr/include/eigen3/Eigen/OrderingMethods
-src/SparseLU/SparseLU_gemm_kernel.h
-/usr/include/eigen3/Eigen/src/SparseLU/SparseLU_gemm_kernel.h
-src/SparseLU/SparseLU_Structs.h
-/usr/include/eigen3/Eigen/src/SparseLU/SparseLU_Structs.h
-src/SparseLU/SparseLU_SupernodalMatrix.h
-/usr/include/eigen3/Eigen/src/SparseLU/SparseLU_SupernodalMatrix.h
-src/SparseLU/SparseLUImpl.h
-/usr/include/eigen3/Eigen/src/SparseLU/SparseLUImpl.h
-src/SparseCore/SparseColEtree.h
-/usr/include/eigen3/Eigen/src/SparseCore/SparseColEtree.h
-src/SparseLU/SparseLU_Memory.h
-/usr/include/eigen3/Eigen/src/SparseLU/SparseLU_Memory.h
-src/SparseLU/SparseLU_heap_relax_snode.h
-/usr/include/eigen3/Eigen/src/SparseLU/SparseLU_heap_relax_snode.h
-src/SparseLU/SparseLU_relax_snode.h
-/usr/include/eigen3/Eigen/src/SparseLU/SparseLU_relax_snode.h
-src/SparseLU/SparseLU_pivotL.h
-/usr/include/eigen3/Eigen/src/SparseLU/SparseLU_pivotL.h
-src/SparseLU/SparseLU_panel_dfs.h
-/usr/include/eigen3/Eigen/src/SparseLU/SparseLU_panel_dfs.h
-src/SparseLU/SparseLU_kernel_bmod.h
-/usr/include/eigen3/Eigen/src/SparseLU/SparseLU_kernel_bmod.h
-src/SparseLU/SparseLU_panel_bmod.h
-/usr/include/eigen3/Eigen/src/SparseLU/SparseLU_panel_bmod.h
-src/SparseLU/SparseLU_column_dfs.h
-/usr/include/eigen3/Eigen/src/SparseLU/SparseLU_column_dfs.h
-src/SparseLU/SparseLU_column_bmod.h
-/usr/include/eigen3/Eigen/src/SparseLU/SparseLU_column_bmod.h
-src/SparseLU/SparseLU_copy_to_ucol.h
-/usr/include/eigen3/Eigen/src/SparseLU/SparseLU_copy_to_ucol.h
-src/SparseLU/SparseLU_pruneL.h
-/usr/include/eigen3/Eigen/src/SparseLU/SparseLU_pruneL.h
-src/SparseLU/SparseLU_Utils.h
-/usr/include/eigen3/Eigen/src/SparseLU/SparseLU_Utils.h
-src/SparseLU/SparseLU.h
-/usr/include/eigen3/Eigen/src/SparseLU/SparseLU.h
-
-/usr/include/eigen3/Eigen/SparseQR
-SparseCore
-/usr/include/eigen3/Eigen/SparseCore
-OrderingMethods
-/usr/include/eigen3/Eigen/OrderingMethods
-src/Core/util/DisableStupidWarnings.h
-/usr/include/eigen3/Eigen/src/Core/util/DisableStupidWarnings.h
-OrderingMethods
-/usr/include/eigen3/Eigen/OrderingMethods
-src/SparseCore/SparseColEtree.h
-/usr/include/eigen3/Eigen/src/SparseCore/SparseColEtree.h
-src/SparseQR/SparseQR.h
-/usr/include/eigen3/Eigen/src/SparseQR/SparseQR.h
+src/SVD/UpperBidiagonalization.h
+/usr/include/eigen3/Eigen/src/SVD/UpperBidiagonalization.h
+src/Eigen2Support/SVD.h
+/usr/include/eigen3/Eigen/src/Eigen2Support/SVD.h
 src/Core/util/ReenableStupidWarnings.h
 /usr/include/eigen3/Eigen/src/Core/util/ReenableStupidWarnings.h
 
@@ -1854,8 +1648,6 @@ iostream
 
 /usr/include/eigen3/Eigen/src/Core/Assign.h
 
-/usr/include/eigen3/Eigen/src/Core/AssignEvaluator.h
-
 /usr/include/eigen3/Eigen/src/Core/Assign_MKL.h
 
 /usr/include/eigen3/Eigen/src/Core/BandMatrix.h
@@ -1865,8 +1657,6 @@ iostream
 /usr/include/eigen3/Eigen/src/Core/BooleanRedux.h
 
 /usr/include/eigen3/Eigen/src/Core/CommaInitializer.h
-
-/usr/include/eigen3/Eigen/src/Core/CoreEvaluators.h
 
 /usr/include/eigen3/Eigen/src/Core/CoreIterators.h
 
@@ -1896,6 +1686,12 @@ iostream
 
 /usr/include/eigen3/Eigen/src/Core/EigenBase.h
 
+/usr/include/eigen3/Eigen/src/Core/Flagged.h
+
+/usr/include/eigen3/Eigen/src/Core/ForceAlignedAccess.h
+
+/usr/include/eigen3/Eigen/src/Core/Functors.h
+
 /usr/include/eigen3/Eigen/src/Core/Fuzzy.h
 
 /usr/include/eigen3/Eigen/src/Core/GeneralProduct.h
@@ -1905,8 +1701,6 @@ iostream
 /usr/include/eigen3/Eigen/src/Core/GlobalFunctions.h
 
 /usr/include/eigen3/Eigen/src/Core/IO.h
-
-/usr/include/eigen3/Eigen/src/Core/Inverse.h
 
 /usr/include/eigen3/Eigen/src/Core/Map.h
 
@@ -1936,9 +1730,7 @@ iostream
 
 /usr/include/eigen3/Eigen/src/Core/PlainObjectBase.h
 
-/usr/include/eigen3/Eigen/src/Core/Product.h
-
-/usr/include/eigen3/Eigen/src/Core/ProductEvaluators.h
+/usr/include/eigen3/Eigen/src/Core/ProductBase.h
 
 /usr/include/eigen3/Eigen/src/Core/Random.h
 
@@ -1958,13 +1750,7 @@ iostream
 
 /usr/include/eigen3/Eigen/src/Core/SelfCwiseBinaryOp.h
 
-/usr/include/eigen3/Eigen/src/Core/Solve.h
-
 /usr/include/eigen3/Eigen/src/Core/SolveTriangular.h
-
-/usr/include/eigen3/Eigen/src/Core/SolverBase.h
-
-/usr/include/eigen3/Eigen/src/Core/SpecialFunctions.h
 
 /usr/include/eigen3/Eigen/src/Core/StableNorm.h
 
@@ -1984,29 +1770,13 @@ iostream
 
 /usr/include/eigen3/Eigen/src/Core/Visitor.h
 
-/usr/include/eigen3/Eigen/src/Core/arch/AVX/Complex.h
-
-/usr/include/eigen3/Eigen/src/Core/arch/AVX/MathFunctions.h
-
-/usr/include/eigen3/Eigen/src/Core/arch/AVX/PacketMath.h
-
-/usr/include/eigen3/Eigen/src/Core/arch/AVX/TypeCasting.h
-
 /usr/include/eigen3/Eigen/src/Core/arch/AltiVec/Complex.h
 
-/usr/include/eigen3/Eigen/src/Core/arch/AltiVec/MathFunctions.h
-
 /usr/include/eigen3/Eigen/src/Core/arch/AltiVec/PacketMath.h
-
-/usr/include/eigen3/Eigen/src/Core/arch/CUDA/MathFunctions.h
-
-/usr/include/eigen3/Eigen/src/Core/arch/CUDA/PacketMath.h
 
 /usr/include/eigen3/Eigen/src/Core/arch/Default/Settings.h
 
 /usr/include/eigen3/Eigen/src/Core/arch/NEON/Complex.h
-
-/usr/include/eigen3/Eigen/src/Core/arch/NEON/MathFunctions.h
 
 /usr/include/eigen3/Eigen/src/Core/arch/NEON/PacketMath.h
 
@@ -2016,17 +1786,7 @@ iostream
 
 /usr/include/eigen3/Eigen/src/Core/arch/SSE/PacketMath.h
 
-/usr/include/eigen3/Eigen/src/Core/arch/SSE/TypeCasting.h
-
-/usr/include/eigen3/Eigen/src/Core/functors/AssignmentFunctors.h
-
-/usr/include/eigen3/Eigen/src/Core/functors/BinaryFunctors.h
-
-/usr/include/eigen3/Eigen/src/Core/functors/NullaryFunctors.h
-
-/usr/include/eigen3/Eigen/src/Core/functors/StlFunctors.h
-
-/usr/include/eigen3/Eigen/src/Core/functors/UnaryFunctors.h
+/usr/include/eigen3/Eigen/src/Core/products/CoeffBasedProduct.h
 
 /usr/include/eigen3/Eigen/src/Core/products/GeneralBlockPanelKernel.h
 
@@ -2095,18 +1855,104 @@ unistd.h
 -
 
 /usr/include/eigen3/Eigen/src/Core/util/Meta.h
-cfloat
--
-math_constants.h
--
-
-/usr/include/eigen3/Eigen/src/Core/util/NonMPL2.h
 
 /usr/include/eigen3/Eigen/src/Core/util/ReenableStupidWarnings.h
 
 /usr/include/eigen3/Eigen/src/Core/util/StaticAssert.h
 
 /usr/include/eigen3/Eigen/src/Core/util/XprHelper.h
+
+/usr/include/eigen3/Eigen/src/Eigen2Support/Block.h
+
+/usr/include/eigen3/Eigen/src/Eigen2Support/Cwise.h
+
+/usr/include/eigen3/Eigen/src/Eigen2Support/CwiseOperators.h
+
+/usr/include/eigen3/Eigen/src/Eigen2Support/Geometry/AlignedBox.h
+
+/usr/include/eigen3/Eigen/src/Eigen2Support/Geometry/All.h
+limits
+-
+RotationBase.h
+/usr/include/eigen3/Eigen/src/Eigen2Support/Geometry/RotationBase.h
+Rotation2D.h
+/usr/include/eigen3/Eigen/src/Eigen2Support/Geometry/Rotation2D.h
+Quaternion.h
+/usr/include/eigen3/Eigen/src/Eigen2Support/Geometry/Quaternion.h
+AngleAxis.h
+/usr/include/eigen3/Eigen/src/Eigen2Support/Geometry/AngleAxis.h
+Transform.h
+/usr/include/eigen3/Eigen/src/Eigen2Support/Geometry/Transform.h
+Translation.h
+/usr/include/eigen3/Eigen/src/Eigen2Support/Geometry/Translation.h
+Scaling.h
+/usr/include/eigen3/Eigen/src/Eigen2Support/Geometry/Scaling.h
+AlignedBox.h
+/usr/include/eigen3/Eigen/src/Eigen2Support/Geometry/AlignedBox.h
+Hyperplane.h
+/usr/include/eigen3/Eigen/src/Eigen2Support/Geometry/Hyperplane.h
+ParametrizedLine.h
+/usr/include/eigen3/Eigen/src/Eigen2Support/Geometry/ParametrizedLine.h
+RotationBase.h
+/usr/include/eigen3/Eigen/src/Eigen2Support/Geometry/RotationBase.h
+Rotation2D.h
+/usr/include/eigen3/Eigen/src/Eigen2Support/Geometry/Rotation2D.h
+Quaternion.h
+/usr/include/eigen3/Eigen/src/Eigen2Support/Geometry/Quaternion.h
+AngleAxis.h
+/usr/include/eigen3/Eigen/src/Eigen2Support/Geometry/AngleAxis.h
+Transform.h
+/usr/include/eigen3/Eigen/src/Eigen2Support/Geometry/Transform.h
+Translation.h
+/usr/include/eigen3/Eigen/src/Eigen2Support/Geometry/Translation.h
+Scaling.h
+/usr/include/eigen3/Eigen/src/Eigen2Support/Geometry/Scaling.h
+AlignedBox.h
+/usr/include/eigen3/Eigen/src/Eigen2Support/Geometry/AlignedBox.h
+Hyperplane.h
+/usr/include/eigen3/Eigen/src/Eigen2Support/Geometry/Hyperplane.h
+ParametrizedLine.h
+/usr/include/eigen3/Eigen/src/Eigen2Support/Geometry/ParametrizedLine.h
+
+/usr/include/eigen3/Eigen/src/Eigen2Support/Geometry/AngleAxis.h
+
+/usr/include/eigen3/Eigen/src/Eigen2Support/Geometry/Hyperplane.h
+
+/usr/include/eigen3/Eigen/src/Eigen2Support/Geometry/ParametrizedLine.h
+
+/usr/include/eigen3/Eigen/src/Eigen2Support/Geometry/Quaternion.h
+
+/usr/include/eigen3/Eigen/src/Eigen2Support/Geometry/Rotation2D.h
+
+/usr/include/eigen3/Eigen/src/Eigen2Support/Geometry/RotationBase.h
+
+/usr/include/eigen3/Eigen/src/Eigen2Support/Geometry/Scaling.h
+
+/usr/include/eigen3/Eigen/src/Eigen2Support/Geometry/Transform.h
+
+/usr/include/eigen3/Eigen/src/Eigen2Support/Geometry/Translation.h
+
+/usr/include/eigen3/Eigen/src/Eigen2Support/LU.h
+
+/usr/include/eigen3/Eigen/src/Eigen2Support/Lazy.h
+
+/usr/include/eigen3/Eigen/src/Eigen2Support/Macros.h
+
+/usr/include/eigen3/Eigen/src/Eigen2Support/MathFunctions.h
+
+/usr/include/eigen3/Eigen/src/Eigen2Support/Memory.h
+
+/usr/include/eigen3/Eigen/src/Eigen2Support/Meta.h
+
+/usr/include/eigen3/Eigen/src/Eigen2Support/Minor.h
+
+/usr/include/eigen3/Eigen/src/Eigen2Support/QR.h
+
+/usr/include/eigen3/Eigen/src/Eigen2Support/SVD.h
+
+/usr/include/eigen3/Eigen/src/Eigen2Support/TriangularSolver.h
+
+/usr/include/eigen3/Eigen/src/Eigen2Support/VectorBlock.h
 
 /usr/include/eigen3/Eigen/src/Eigenvalues/./ComplexSchur.h
 ./HessenbergDecomposition.h
@@ -2206,33 +2052,13 @@ Eigen/src/Core/util/MKL_support.h
 
 /usr/include/eigen3/Eigen/src/Householder/HouseholderSequence.h
 
-/usr/include/eigen3/Eigen/src/IterativeLinearSolvers/BasicPreconditioners.h
-
-/usr/include/eigen3/Eigen/src/IterativeLinearSolvers/BiCGSTAB.h
-
-/usr/include/eigen3/Eigen/src/IterativeLinearSolvers/ConjugateGradient.h
-
-/usr/include/eigen3/Eigen/src/IterativeLinearSolvers/IncompleteCholesky.h
-vector
--
-list
--
-
-/usr/include/eigen3/Eigen/src/IterativeLinearSolvers/IncompleteLUT.h
-
-/usr/include/eigen3/Eigen/src/IterativeLinearSolvers/IterativeSolverBase.h
-
-/usr/include/eigen3/Eigen/src/IterativeLinearSolvers/LeastSquareConjugateGradient.h
-
-/usr/include/eigen3/Eigen/src/IterativeLinearSolvers/SolveWithGuess.h
-
 /usr/include/eigen3/Eigen/src/Jacobi/Jacobi.h
 
 /usr/include/eigen3/Eigen/src/LU/Determinant.h
 
 /usr/include/eigen3/Eigen/src/LU/FullPivLU.h
 
-/usr/include/eigen3/Eigen/src/LU/InverseImpl.h
+/usr/include/eigen3/Eigen/src/LU/Inverse.h
 
 /usr/include/eigen3/Eigen/src/LU/PartialPivLU.h
 
@@ -2241,16 +2067,6 @@ Eigen/src/Core/util/MKL_support.h
 /usr/include/eigen3/Eigen/src/LU/Eigen/src/Core/util/MKL_support.h
 
 /usr/include/eigen3/Eigen/src/LU/arch/Inverse_SSE.h
-
-/usr/include/eigen3/Eigen/src/OrderingMethods/Amd.h
-../Core/util/NonMPL2.h
-/usr/include/eigen3/Eigen/src/Core/util/NonMPL2.h
-
-/usr/include/eigen3/Eigen/src/OrderingMethods/Eigen_Colamd.h
-
-/usr/include/eigen3/Eigen/src/OrderingMethods/Ordering.h
-Eigen_Colamd.h
-/usr/include/eigen3/Eigen/src/OrderingMethods/Eigen_Colamd.h
 
 /usr/include/eigen3/Eigen/src/QR/ColPivHouseholderQR.h
 
@@ -2263,10 +2079,8 @@ Eigen/src/Core/util/MKL_support.h
 /usr/include/eigen3/Eigen/src/QR/HouseholderQR.h
 
 /usr/include/eigen3/Eigen/src/QR/HouseholderQR_MKL.h
-../Core/util/MKL_support.h
-/usr/include/eigen3/Eigen/src/Core/util/MKL_support.h
-
-/usr/include/eigen3/Eigen/src/SVD/BDCSVD.h
+Eigen/src/Core/util/MKL_support.h
+/usr/include/eigen3/Eigen/src/QR/Eigen/src/Core/util/MKL_support.h
 
 /usr/include/eigen3/Eigen/src/SVD/JacobiSVD.h
 
@@ -2274,125 +2088,13 @@ Eigen/src/Core/util/MKL_support.h
 Eigen/src/Core/util/MKL_support.h
 /usr/include/eigen3/Eigen/src/SVD/Eigen/src/Core/util/MKL_support.h
 
-/usr/include/eigen3/Eigen/src/SVD/SVDBase.h
-
 /usr/include/eigen3/Eigen/src/SVD/UpperBidiagonalization.h
-
-/usr/include/eigen3/Eigen/src/SparseCholesky/SimplicialCholesky.h
-
-/usr/include/eigen3/Eigen/src/SparseCholesky/SimplicialCholesky_impl.h
-../Core/util/NonMPL2.h
-/usr/include/eigen3/Eigen/src/Core/util/NonMPL2.h
-
-/usr/include/eigen3/Eigen/src/SparseCore/AmbiVector.h
-
-/usr/include/eigen3/Eigen/src/SparseCore/CompressedStorage.h
-
-/usr/include/eigen3/Eigen/src/SparseCore/ConservativeSparseSparseProduct.h
-
-/usr/include/eigen3/Eigen/src/SparseCore/MappedSparseMatrix.h
-
-/usr/include/eigen3/Eigen/src/SparseCore/SparseAssign.h
-
-/usr/include/eigen3/Eigen/src/SparseCore/SparseBlock.h
-
-/usr/include/eigen3/Eigen/src/SparseCore/SparseColEtree.h
-
-/usr/include/eigen3/Eigen/src/SparseCore/SparseCompressedBase.h
-
-/usr/include/eigen3/Eigen/src/SparseCore/SparseCwiseBinaryOp.h
-
-/usr/include/eigen3/Eigen/src/SparseCore/SparseCwiseUnaryOp.h
-
-/usr/include/eigen3/Eigen/src/SparseCore/SparseDenseProduct.h
-
-/usr/include/eigen3/Eigen/src/SparseCore/SparseDiagonalProduct.h
-
-/usr/include/eigen3/Eigen/src/SparseCore/SparseDot.h
-
-/usr/include/eigen3/Eigen/src/SparseCore/SparseFuzzy.h
-
-/usr/include/eigen3/Eigen/src/SparseCore/SparseMap.h
-
-/usr/include/eigen3/Eigen/src/SparseCore/SparseMatrix.h
-
-/usr/include/eigen3/Eigen/src/SparseCore/SparseMatrixBase.h
-../plugins/CommonCwiseUnaryOps.h
-/usr/include/eigen3/Eigen/src/plugins/CommonCwiseUnaryOps.h
-../plugins/CommonCwiseBinaryOps.h
-/usr/include/eigen3/Eigen/src/plugins/CommonCwiseBinaryOps.h
-../plugins/MatrixCwiseUnaryOps.h
-/usr/include/eigen3/Eigen/src/plugins/MatrixCwiseUnaryOps.h
-../plugins/MatrixCwiseBinaryOps.h
-/usr/include/eigen3/Eigen/src/plugins/MatrixCwiseBinaryOps.h
-../plugins/BlockMethods.h
-/usr/include/eigen3/Eigen/src/plugins/BlockMethods.h
-
-/usr/include/eigen3/Eigen/src/SparseCore/SparsePermutation.h
-
-/usr/include/eigen3/Eigen/src/SparseCore/SparseProduct.h
-
-/usr/include/eigen3/Eigen/src/SparseCore/SparseRedux.h
-
-/usr/include/eigen3/Eigen/src/SparseCore/SparseRef.h
-
-/usr/include/eigen3/Eigen/src/SparseCore/SparseSelfAdjointView.h
-
-/usr/include/eigen3/Eigen/src/SparseCore/SparseSolverBase.h
-
-/usr/include/eigen3/Eigen/src/SparseCore/SparseSparseProductWithPruning.h
-
-/usr/include/eigen3/Eigen/src/SparseCore/SparseTranspose.h
-
-/usr/include/eigen3/Eigen/src/SparseCore/SparseTriangularView.h
-
-/usr/include/eigen3/Eigen/src/SparseCore/SparseUtil.h
-
-/usr/include/eigen3/Eigen/src/SparseCore/SparseVector.h
-
-/usr/include/eigen3/Eigen/src/SparseCore/SparseView.h
-
-/usr/include/eigen3/Eigen/src/SparseCore/TriangularSolver.h
-
-/usr/include/eigen3/Eigen/src/SparseLU/SparseLU.h
-
-/usr/include/eigen3/Eigen/src/SparseLU/SparseLUImpl.h
-
-/usr/include/eigen3/Eigen/src/SparseLU/SparseLU_Memory.h
-
-/usr/include/eigen3/Eigen/src/SparseLU/SparseLU_Structs.h
-
-/usr/include/eigen3/Eigen/src/SparseLU/SparseLU_SupernodalMatrix.h
-
-/usr/include/eigen3/Eigen/src/SparseLU/SparseLU_Utils.h
-
-/usr/include/eigen3/Eigen/src/SparseLU/SparseLU_column_bmod.h
-
-/usr/include/eigen3/Eigen/src/SparseLU/SparseLU_column_dfs.h
-
-/usr/include/eigen3/Eigen/src/SparseLU/SparseLU_copy_to_ucol.h
-
-/usr/include/eigen3/Eigen/src/SparseLU/SparseLU_gemm_kernel.h
-
-/usr/include/eigen3/Eigen/src/SparseLU/SparseLU_heap_relax_snode.h
-
-/usr/include/eigen3/Eigen/src/SparseLU/SparseLU_kernel_bmod.h
-
-/usr/include/eigen3/Eigen/src/SparseLU/SparseLU_panel_bmod.h
-
-/usr/include/eigen3/Eigen/src/SparseLU/SparseLU_panel_dfs.h
-
-/usr/include/eigen3/Eigen/src/SparseLU/SparseLU_pivotL.h
-
-/usr/include/eigen3/Eigen/src/SparseLU/SparseLU_pruneL.h
-
-/usr/include/eigen3/Eigen/src/SparseLU/SparseLU_relax_snode.h
-
-/usr/include/eigen3/Eigen/src/SparseQR/SparseQR.h
 
 /usr/include/eigen3/Eigen/src/misc/Image.h
 
 /usr/include/eigen3/Eigen/src/misc/Kernel.h
+
+/usr/include/eigen3/Eigen/src/misc/Solve.h
 
 /usr/include/eigen3/Eigen/src/plugins/ArrayCwiseBinaryOps.h
 

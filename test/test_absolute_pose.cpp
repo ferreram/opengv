@@ -53,8 +53,8 @@ int main( int argc, char** argv )
   initializeRandomSeed();
   
   //set experiment parameters
-  double noise = 0.0;
-  double outlierFraction = 0.0;
+  double noise = 0.1;
+  double outlierFraction = 0.15;
   size_t numberPoints = 100;
 
   //create a random viewpoint pose
@@ -162,7 +162,7 @@ int main( int argc, char** argv )
   std::cout << std::endl;
   std::vector<int> indices10 = getNindices(10);
   //add a small perturbation to the pose
-  getPerturbedPose( position, rotation, t_perturbed, R_perturbed, 0.1 );
+  getPerturbedPose( position, rotation, t_perturbed, R_perturbed, 0.5 );
   adapter.sett(t_perturbed);
   adapter.setR(R_perturbed);
   transformation_t nonlinear_transformation_10 =

@@ -208,8 +208,8 @@ opengv::generateRandom2D3DCorrespondences(
     Eigen::MatrixXd & gt )
 {
   //initialize point-cloud
-  double minDepth = 4;
-  double maxDepth = 8;
+  double minDepth = 4.5;
+  double maxDepth = 5.5;
 
   for( size_t i = 0; i < (size_t) gt.cols(); i++ )
     gt.col(i) = generateRandomPoint( maxDepth, minDepth );
@@ -284,8 +284,8 @@ opengv::generateMulti2D3DCorrespondences(
     std::vector<std::shared_ptr<Eigen::MatrixXd> > & gt )
 {
   //initialize point-cloud
-  double minDepth = 4;
-  double maxDepth = 8;
+  double minDepth = 4.75;
+  double maxDepth = 5.25;
 
   for( size_t cam = 0; cam < camOffsets.size(); cam++ )
   {
@@ -379,7 +379,7 @@ opengv::generateRandom2D2DCorrespondences(
 {
   //initialize point-cloud
   double minDepth = 4;
-  double maxDepth = 8;
+  double maxDepth = 6;
 
   for( size_t i = 0; i < (size_t) gt.cols(); i++ )
     gt.col(i) = generateRandomPoint( maxDepth, minDepth );

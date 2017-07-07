@@ -326,7 +326,46 @@ bp::object ransac(
 						listFromInliers(ransac.inliers_));
 }
 
-
+bp::object ransac_optimized(
+	bpn::array &v,
+	bpn::array &p,
+	std::string algo_name,
+	double threshold,
+	int max_iterations )
+{
+	using namespace opengv::sac_problems::absolute_pose;
+	
+	CentralAbsoluteAdapter adapter(v, p);
+	
+	// Create a ransac problem
+	AbsolutePoseSacProblem::algorithm_t algorithm = AbsolutePoseSacProblem::KNEIP;
+	if (algo_name == "TWOPT") algorithm = AbsolutePoseSacProblem::TWOPT;
+	else if (algo_name == "KNEIP") algorithm = AbsolutePoseSacProblem::KNEIP;
+	else if (algo_name == "GAO") algorithm = AbsolutePoseSacProblem::GAO;
+	else if (algo_name == "EPNP") algorithm = AbsolutePoseSacProblem::EPNP;
+	else if (algo_name == "GP3P") algorithm = AbsolutePoseSacProblem::GP3P;
+	
+	std::shared_ptr<AbsolutePoseSacProblem>
+	absposeproblem_ptr(
+		new AbsolutePoseSacProblem(adapter, algorithm));
+	
+	// Create a ransac solver for the problem
+	opengv::sac::Ransac<AbsolutePoseSacProblem> ransac;
+	
+	ransac.sac_model_ = absposeproblem_ptr;
+	ransac.threshold_ = threshold * (1.0 - cos(atan(sqrt(2.0)*0.5/800.0)));
+	ransac.max_iterations_ = max_iterations;
+	
+	// Solve
+	ransac.computeModel();
+	
+	// Optimize
+	opengv::transformation_t optimized_result;
+	ransac.sac_model_->optimizeModelCoefficients(ransac.inliers_, ransac.model_coefficients_, optimized_result);
+	
+	return bp::make_tuple(arrayFromTransformation(optimized_result), 
+						  listFromInliers(ransac.inliers_));
+}
 
 } // namespace absolute_pose
 
@@ -533,6 +572,46 @@ bp::object ransac(
 						listFromInliers(ransac.inliers_));
 }
 
+bp::object ransac_optimized(
+	bpn::array &b1,
+	bpn::array &b2,
+	std::string algo_name,
+	double threshold,
+	int max_iterations )
+{
+	using namespace opengv::sac_problems::relative_pose;
+	
+	CentralRelativeAdapter adapter(b1, b2);
+	
+	// Create a ransac problem
+	CentralRelativePoseSacProblem::algorithm_t algorithm = CentralRelativePoseSacProblem::NISTER;
+	if (algo_name == "STEWENIUS") algorithm = CentralRelativePoseSacProblem::STEWENIUS;
+	else if (algo_name == "NISTER") algorithm = CentralRelativePoseSacProblem::NISTER;
+	else if (algo_name == "SEVENPT") algorithm = CentralRelativePoseSacProblem::SEVENPT;
+	else if (algo_name == "EIGHTPT") algorithm = CentralRelativePoseSacProblem::EIGHTPT;
+	
+	std::shared_ptr<CentralRelativePoseSacProblem>
+	relposeproblem_ptr(
+		new CentralRelativePoseSacProblem(adapter, algorithm));
+	
+	// Create a ransac solver for the problem
+	opengv::sac::Ransac<CentralRelativePoseSacProblem> ransac;
+	
+	ransac.sac_model_ = relposeproblem_ptr;
+	ransac.threshold_ = threshold * (1.0 - cos(atan(sqrt(2.0)*0.5/800.0)));
+	ransac.max_iterations_ = max_iterations;
+	
+	// Solve
+	ransac.computeModel();
+	
+	// Optimize
+	opengv::transformation_t optimized_result;
+	ransac.sac_model_->optimizeModelCoefficients(ransac.inliers_, ransac.model_coefficients_, optimized_result);
+	
+	return bp::make_tuple(arrayFromTransformation(optimized_result), 
+						  listFromInliers(ransac.inliers_));
+}
+
 bp::object ransac_rotationOnly(
     bpn::array &b1,
     bpn::array &b2,
@@ -616,6 +695,7 @@ BOOST_PYTHON_MODULE(pyopengv) {
   def("absolute_pose_upnp", pyopengv::absolute_pose::upnp);
   def("absolute_pose_optimize_nonlinear", pyopengv::absolute_pose::optimize_nonlinear);
   def("absolute_pose_ransac", pyopengv::absolute_pose::ransac);
+  def("absolute_pose_ransac_optimize", pyopengv::absolute_pose::ransac_optimized);
 
   def("relative_pose_twopt", pyopengv::relative_pose::twopt);
   def("relative_pose_twopt_rotation_only", pyopengv::relative_pose::twopt_rotationOnly);
@@ -628,6 +708,7 @@ BOOST_PYTHON_MODULE(pyopengv) {
   def("relative_pose_sixpt", pyopengv::relative_pose::sixpt);
   def("relative_pose_optimize_nonlinear", pyopengv::relative_pose::optimize_nonlinear);
   def("relative_pose_ransac", pyopengv::relative_pose::ransac);
+  def("relative_pose_ransac_optimize", pyopengv::relative_pose::ransac_optimized);
   def("relative_pose_ransac_rotation_only", pyopengv::relative_pose::ransac_rotationOnly);
 
   def("triangulation_triangulate", pyopengv::triangulation::triangulate);
