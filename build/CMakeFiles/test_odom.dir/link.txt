@@ -1,1 +1,0 @@
-/usr/bin/c++    -std=c++11 -O3 -DNDEBUG    CMakeFiles/test_odom.dir/test/test_odom.o  -o bin/test_odom -rdynamic lib/libopengv.a lib/librandom_generators.a lib/libopengv.a 
