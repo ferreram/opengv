@@ -253,7 +253,7 @@ int main( int argc, char** argv )
 	std::cout << "*************************************************" << std::endl;
 	
 	//generate a random pose for viewpoint 3
-	translation_t position3 = position2 + generateRandomTranslation(2.0);
+	translation_t position3 = position2 + generateRandomTranslation(5.0);
 	rotation_t rotation3 = generateRandomRotation(0.25);
 
 	//derive correspondences based on random point-cloud

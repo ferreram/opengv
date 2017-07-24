@@ -120,8 +120,8 @@ class RelativePoseDataset:
                                 position2, rotation2,
                                 num_points,
                                 noise, outlier_fraction):
-        min_depth = 4
-        max_depth = 8
+        min_depth = 4.5
+        max_depth = 5.5
 
         # initialize point-cloud
         self.points = np.empty((num_points, 3))
@@ -193,9 +193,6 @@ def test_relative_pose_ransac():
     ransac_transformation = pyopengv.relative_pose_ransac(
         d.bearing_vectors1, d.bearing_vectors2, "NISTER", 0.01, 1000)
 
-    print(d.position.shape)
-    print(d.rotation.shape)
-
     assert same_transformation(d.position, d.rotation, ransac_transformation[0])
 
     print("Test Relative Pose RANSAC \n")
@@ -210,16 +207,30 @@ def test_relative_pose_ransac():
 
 
 def test_absolute_pose_ransac():
-    print "Testing absolute pose ransac"
+    outliers = 0.25
+    noise = 0.01
+    d = RelativePoseDataset(100, noise, outliers)
 
-    d = RelativePoseDataset(100, 0, 0.5)
+    iterations = 100
+    th = 100000.
 
-    ransac_transformation = pyopengv.absolute_pose_ransac(d.points, d.bearing_vectors1, "KNEIP", 0.001, 2000)
+    ransac_transformation = pyopengv.absolute_pose_ransac(d.bearing_vectors2, d.points, "KNEIP", th, iterations)
 
-    print("Test Absolute Pose RANSAC \n")
+    print("\n=========================================")
+    print("\n=========================================")
+    print("\nTest Absolute Pose RANSAC with :\n")
+    print(" - %s points" % len(d.points))
+    print(" - %s d'outliers" % (outliers * len(d.points)))
+    print(" - Threshold : %s / Iterations : %s" % (th, iterations))
 
-    print("Result : \n %s \n" % ransac_transformation[0])
-    print("Inliers : \n %s \n" % ransac_transformation[1])
+    print("\nResult / Truth: \n %s" % np.hstack((ransac_transformation[0][:,3].reshape(3,1),d.position.reshape(3,1))))
+    print("Diff : %s \n" % abs(ransac_transformation[0][:,3].reshape(3,1) - d.position.reshape(3,1)).mean())
+    print("Inliers : \n %s \n" % len(ransac_transformation[1]))
+
+    ransac_transformation = pyopengv.absolute_pose_ransac_optimize(d.bearing_vectors2, d.points, "KNEIP", th, iterations)
+
+    print("Optimized Result / Truth: \n %s" % np.hstack((ransac_transformation[0][:,3].reshape(3,1),d.position.reshape(3,1))))
+    print("Diff : %s \n" % abs(ransac_transformation[0][:,3].reshape(3,1) - d.position.reshape(3,1)).mean())
 
     print "Done testing absolute pose ransac"
 
@@ -252,13 +263,87 @@ def test_triangulation():
 
     assert np.allclose(d.points, points2)
 
-    print "Done testing triangulation"
+    print "Done testing triangulation \n \n"
+
+
+def test_relative_pose_triangulated():
+
+    # Creating Random Poses / Points
+    d = RelativePoseDataset(500, 0.002, 0.15)
+
+    result = pyopengv.relative_pose_ransac_optimize(d.bearing_vectors1, d.bearing_vectors2, "NISTER", 4., 1000)
+
+    E = result[0]
+    
+    print("Testing mini Odom\n")
+    print("Relative Pose Computed : \n")
+
+    R = E[:,:3]
+    t = normalized(E[:,3])
+    
+    print("Truth : \n %s \n Normalized Truth : %s \n" % (d.position, normalized(d.position)))
+    print("Got : \n %s \n Normalized translation : \n %s \n" % (E, t))
+    print("%s inliers / %s points \n" % (len(result[1]), len(d.points)))
+    
+    bearing_vectors_to_erase = []
+
+    inliers = result[1]
+    
+    for i in xrange(len(d.bearing_vectors1)):
+        if inliers != []:
+            if inliers[0] == i:
+                inliers.pop(0)
+            else:
+                bearing_vectors_to_erase.append(i)
+        else:
+            bearing_vectors_to_erase.append(i)
+
+    bv_1 = np.delete(d.bearing_vectors1, bearing_vectors_to_erase, axis=0)
+    bv_2 = np.delete(d.bearing_vectors2, bearing_vectors_to_erase, axis=0)
+
+    pts_3d = pyopengv.triangulation_triangulate2(bv_1, bv_2, t, R)
+
+    abs_pose = pyopengv.absolute_pose_ransac_optimize(bv_2, pts_3d, "KNEIP", 2., 500)
+
+    print("Absolute Pose Computed : \n %s \n" % abs_pose[0])
+    print("%s inliers / %s points \n" % (len(abs_pose[1]), len(pts_3d)))
+
+    # for i in xrange(len(d.points)):
+    #     d.bearing_vectors2[i] = R.T.dot(d.points[i] - t)
+
+    result_ = pyopengv.absolute_pose_ransac(d.bearing_vectors2, d.points, "KNEIP", 0.001, 1000)
+
+    print("\n----------------------\n")
+    print("TEST \n")
+    print("Truth : \n")
+    print(np.hstack((d.rotation,d.position.reshape(3,1))))
+    print("Essential M. : \n")
+    print(E)
+    print()
+    print(np.hstack((R,t.reshape(3,1))))
+    print()
+    print(np.hstack((R,t.reshape(3,1))) / E)
+
+    print("\n Truth : \n")
+    print(d.points[:5])
+    print()
+    print(d.bearing_vectors1[:5])
+    print()
+    print((d.bearing_vectors1 / d.points)[:5])
+    print()
+    
+    print("\nAbsolute Pose : \n")
+    print(normalized(result_[0][:,3]))
+    print()
+    print(t)
 
 
 if __name__ == "__main__":
-    test_relative_pose()
-    test_relative_pose_ransac()
+    # test_relative_pose()
+    # test_relative_pose_ransac()
+    # test_absolute_pose_ransac()
+    # test_relative_pose_ransac_rotation_only()
+    # test_triangulation()
+    # test_relative_pose_triangulated()
     test_absolute_pose_ransac()
-    test_relative_pose_ransac_rotation_only()
-    test_triangulation()
     

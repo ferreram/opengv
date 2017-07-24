@@ -317,7 +317,7 @@ bp::object ransac(
   opengv::sac::Ransac<AbsolutePoseSacProblem> ransac;
 
   ransac.sac_model_ = absposeproblem_ptr;
-  ransac.threshold_ = threshold;
+  ransac.threshold_ = threshold * (1.0 - cos(atan(sqrt(2.0)*0.5/800.0)));
   ransac.max_iterations_ = max_iterations;
 
   // Solve
@@ -563,7 +563,7 @@ bp::object ransac(
   opengv::sac::Ransac<CentralRelativePoseSacProblem> ransac;
 
   ransac.sac_model_ = relposeproblem_ptr;
-  ransac.threshold_ = threshold;
+  ransac.threshold_ = threshold * (1.0 - cos(atan(sqrt(2.0)*0.5/800.0)));
   ransac.max_iterations_ = max_iterations;
 
   // Solve
