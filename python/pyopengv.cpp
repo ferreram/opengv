@@ -295,6 +295,7 @@ bp::object ransac(
     bpn::array &p,
     std::string algo_name,
     double threshold,
+	double focal,
     int max_iterations )
 {
   using namespace opengv::sac_problems::absolute_pose;
@@ -317,7 +318,7 @@ bp::object ransac(
   opengv::sac::Ransac<AbsolutePoseSacProblem> ransac;
 
   ransac.sac_model_ = absposeproblem_ptr;
-  ransac.threshold_ = threshold * (1.0 - cos(atan(sqrt(2.0)*0.5/800.0)));
+  ransac.threshold_ = (1.0 - cos(atan(threshold/focal)));
   ransac.max_iterations_ = max_iterations;
 
   // Solve
@@ -331,6 +332,7 @@ bp::object ransac_optimized(
 	bpn::array &p,
 	std::string algo_name,
 	double threshold,
+	double focal,
 	int max_iterations )
 {
 	using namespace opengv::sac_problems::absolute_pose;
@@ -353,7 +355,7 @@ bp::object ransac_optimized(
 	opengv::sac::Ransac<AbsolutePoseSacProblem> ransac;
 	
 	ransac.sac_model_ = absposeproblem_ptr;
-	ransac.threshold_ = threshold * (1.0 - cos(atan(sqrt(2.0)*0.5/800.0)));
+	ransac.threshold_ = (1.0 - cos(atan(threshold/focal)));
 	ransac.max_iterations_ = max_iterations;
 	
 	// Solve
@@ -541,7 +543,8 @@ bp::object ransac(
     bpn::array &b1,
     bpn::array &b2,
     std::string algo_name,
-    double threshold,
+	double threshold,
+	double focal,
     int max_iterations )
 {
   using namespace opengv::sac_problems::relative_pose;
@@ -563,7 +566,7 @@ bp::object ransac(
   opengv::sac::Ransac<CentralRelativePoseSacProblem> ransac;
 
   ransac.sac_model_ = relposeproblem_ptr;
-  ransac.threshold_ = threshold * (1.0 - cos(atan(sqrt(2.0)*0.5/800.0)));
+  ransac.threshold_ = (1.0 - cos(atan(threshold/focal)));
   ransac.max_iterations_ = max_iterations;
 
   // Solve
@@ -577,6 +580,7 @@ bp::object ransac_optimized(
 	bpn::array &b2,
 	std::string algo_name,
 	double threshold,
+	double focal,
 	int max_iterations )
 {
 	using namespace opengv::sac_problems::relative_pose;
@@ -598,7 +602,7 @@ bp::object ransac_optimized(
 	opengv::sac::Ransac<CentralRelativePoseSacProblem> ransac;
 	
 	ransac.sac_model_ = relposeproblem_ptr;
-	ransac.threshold_ = threshold * (1.0 - cos(atan(sqrt(2.0)*0.5/800.0)));
+	ransac.threshold_ = (1.0 - cos(atan(threshold/focal)));
 	ransac.max_iterations_ = max_iterations;
 	
 	// Solve
