@@ -22,7 +22,7 @@ set(EXECUTABLE_OUTPUT_PATH ${CMAKE_BINARY_DIR}/bin)
 set(LIBRARY_OUTPUT_PATH ${CMAKE_BINARY_DIR}/lib)
 
 OPTION(BUILD_TESTS "Build tests" ON)
-OPTION(BUILD_PYTHON "Build Python extension" ON)
+OPTION(BUILD_PYTHON "Build Python extension" OFF)
 
 IF(MSVC)
   set(BUILD_SHARED_LIBS OFF)
@@ -50,9 +50,13 @@ ADD_DEFINITIONS (
 -fno-strict-aliasing
 )
 
+
+add_definitions(-DEIGEN_DONT_VECTORIZE -DEIGEN_DISABLE_UNALIGNED_ARRAY_ASSERT)
+
+
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${PROJECT_SOURCE_DIR}/modules/")
-find_package(Eigen REQUIRED)
-set(ADDITIONAL_INCLUDE_DIRS ${EIGEN_INCLUDE_DIRS} ${EIGEN_INCLUDE_DIR}/unsupported)
+find_package(Eigen3 REQUIRED)
+set(ADDITIONAL_INCLUDE_DIRS ${EIGEN3_INCLUDE_DIRS} ${EIGEN3_INCLUDE_DIR}/unsupported)
 include_directories(${PROJECT_SOURCE_DIR}/include)
 
 set( OPENGV_SOURCE_FILES
@@ -348,3 +352,4 @@ install(EXPORT opengv-export DESTINATION CMake FILE opengv-config.cmake)
 if (BUILD_PYTHON)
   add_subdirectory( python )
 endif()
+

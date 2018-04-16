@@ -213,6 +213,10 @@ def test_absolute_pose_ransac():
 
     iterations = 100
     th = 100000.
+    
+    print(d.bearing_vectors2.shape)
+    
+    return
 
     ransac_transformation = pyopengv.absolute_pose_ransac(d.bearing_vectors2, d.points, "KNEIP", th, iterations)
 
